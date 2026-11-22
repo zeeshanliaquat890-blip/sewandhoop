@@ -17,9 +17,9 @@ export const siteConfig = {
    * false = whole site is hidden from Google (noindex meta tag + X-Robots-Tag header + robots.txt note).
    * Set to true when the site is ready to launch, then push.
    */
-  allowIndexing: false,
+  allowIndexing: true,
   /** Owner's request: switch indexing on automatically when the first real article goes live (one time only). */
-  autoEnableIndexingAfterFirstArticle: true,
+  autoEnableIndexingAfterFirstArticle: false,
   language: "en-US",
 
   amazon: {
