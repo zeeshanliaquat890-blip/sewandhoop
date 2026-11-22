@@ -1,1 +1,103 @@
-{}
+{
+ "brother-cs7000x": {
+  "id": "brother-cs7000x",
+  "name": "Brother CS7000X",
+  "brand": "Brother",
+  "variant": "CS7000X",
+  "type": "Computerized sewing and quilting machine",
+  "asin": null,
+  "amazonQuery": "brother cs7000x sewing machine",
+  "image": null,
+  "priceRange": "$200–$300",
+  "specs": {
+   "Type": "Computerized sewing and quilting machine",
+   "Built-in stitches": "70",
+   "Buttonholes": "7 one-step styles",
+   "Needle threader": "Yes",
+   "Free arm": "Yes",
+   "Warranty (US)": "25-year limited"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- primary source",
+  "lastVerified": "2026-11-22"
+ },
+ "brother-gx37": {
+  "id": "brother-gx37",
+  "name": "Brother GX37",
+  "brand": "Brother",
+  "variant": "GX37",
+  "type": "Sewing machine",
+  "asin": null,
+  "amazonQuery": "brother gx37 sewing machine",
+  "image": null,
+  "priceRange": "Under $200",
+  "specs": {
+   "Type": "Sewing machine",
+   "Built-in stitches": "37",
+   "Buttonholes": "1 one-step style",
+   "Needle threader": "Yes",
+   "Free arm": "Yes",
+   "Warranty (US)": "1/2/25-year limited"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- primary source",
+  "lastVerified": "2026-11-22"
+ },
+ "singer-m3500": {
+  "id": "singer-m3500",
+  "name": "Singer M3500",
+  "brand": "Singer",
+  "variant": "M3500",
+  "type": "Portable dial-select sewing machine",
+  "asin": null,
+  "amazonQuery": "singer m3500 sewing machine",
+  "image": null,
+  "priceRange": "$150–$250",
+  "specs": {
+   "Type": "Portable dial-select sewing machine",
+   "Built-in stitches": "32",
+   "Buttonholes": "One-step",
+   "Throat space": "5.7 in",
+   "Needle threader": "Yes",
+   "Free arm": "Yes",
+   "Metal frame": "Yes",
+   "Warranty (US)": "Up to 25-year limited"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- primary source",
+  "lastVerified": "2026-11-22"
+ },
+ "singer-4423": {
+  "id": "singer-4423",
+  "name": "Singer Heavy Duty 4423",
+  "brand": "Singer",
+  "variant": "Heavy Duty 4423",
+  "type": "Dial-select heavy-duty sewing machine",
+  "asin": null,
+  "amazonQuery": "singer heavy duty 4423 sewing machine",
+  "image": null,
+  "priceRange": "$200–$300",
+  "specs": {
+   "Type": "Dial-select heavy-duty sewing machine",
+   "Built-in stitches": "23",
+   "Buttonholes": "One-step",
+   "Max speed": "1100",
+   "Throat space": "6.25 in",
+   "Needle threader": "Yes",
+   "Free arm": "Yes",
+   "Metal frame": "Yes",
+   "Warranty (US)": "Up to 25-year limited"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- primary source",
+  "lastVerified": "2026-11-22"
+ }
+}

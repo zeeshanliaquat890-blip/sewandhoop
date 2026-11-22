@@ -52,5 +52,137 @@
   "claim": "Included presser feet",
   "status": "Verified -- primary source",
   "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0010": {
+  "product": "singer-m3500",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0011": {
+  "product": "singer-m3500",
+  "claim": "Stitch applications",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0012": {
+  "product": "singer-m3500",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0013": {
+  "product": "singer-m3500",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0014": {
+  "product": "singer-m3500",
+  "claim": "Free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0015": {
+  "product": "singer-m3500",
+  "claim": "Metal frame",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0016": {
+  "product": "singer-m3500",
+  "claim": "Sewing space, needle to tower",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0017": {
+  "product": "singer-m3500",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0018": {
+  "product": "singer-m3500",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-m3500-sewing-machine"
+ },
+ "C0019": {
+  "product": "brother-gx37",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0020": {
+  "product": "brother-gx37",
+  "claim": "Free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0021": {
+  "product": "singer-4423",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0022": {
+  "product": "singer-4423",
+  "claim": "Stitch applications",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0023": {
+  "product": "singer-4423",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0024": {
+  "product": "singer-4423",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0025": {
+  "product": "singer-4423",
+  "claim": "Top drop-in bobbin",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0026": {
+  "product": "singer-4423",
+  "claim": "Metal frame",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0027": {
+  "product": "singer-4423",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0028": {
+  "product": "singer-4423",
+  "claim": "Sewing space, needle to tower",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0029": {
+  "product": "singer-4423",
+  "claim": "Adjustable presser foot pressure",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0030": {
+  "product": "singer-4423",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0031": {
+  "product": "singer-4423",
+  "claim": "Free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
  }
 }
