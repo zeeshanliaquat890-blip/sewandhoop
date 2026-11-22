@@ -19,7 +19,6 @@ export function ComparisonTable({ products, columns }: { products: Product[]; co
               <th scope="col" className="label-cond px-4 py-3 text-[0.9rem] font-bold">Machine</th>
               {hasScore && <th scope="col" className="label-cond px-3 py-3 text-center text-[0.9rem] font-bold">Score</th>}
               {cols.map((c) => <th key={c} scope="col" className="label-cond px-3 py-3 text-[0.9rem] font-bold">{c}</th>)}
-              <th scope="col" className="px-4 py-3"><span className="sr-only">Buy</span></th>
             </tr>
           </thead>
           <tbody className="divide-y divide-line">
@@ -30,7 +29,8 @@ export function ComparisonTable({ products, columns }: { products: Product[]; co
                     <div className="w-14 shrink-0"><ProductImage product={p} small /></div>
                     <div className="leading-snug">
                       {p.badge && <span className="label-cond block text-[0.78rem] text-madder">{p.badge}</span>}
-                      <a href={`#product-${p.id}`} className="font-bold leading-snug text-ink no-underline hover:text-madder">{p.name}</a>
+                      <a href={`#product-${p.id}`} className="block font-bold leading-snug text-ink no-underline hover:text-madder">{p.name}</a>
+                      <AffiliateLink asin={p.asin} query={p.amazonQuery || p.name} variant="amazon" className="mt-2 !min-h-[2.2rem] whitespace-nowrap !px-3 !text-[0.85rem]" track={`table-${p.id}`}>Check price</AffiliateLink>
                     </div>
                   </div>
                 </th>
@@ -40,9 +40,6 @@ export function ComparisonTable({ products, columns }: { products: Product[]; co
                   </td>
                 )}
                 {cols.map((c) => <td key={c} className="px-3 py-4 align-middle">{p.specs?.[c] ?? "—"}</td>)}
-                <td className="px-4 py-4 text-right align-middle">
-                  <AffiliateLink asin={p.asin} query={p.amazonQuery || p.name} variant="amazon" className="!min-h-[2.5rem] whitespace-nowrap !px-4 !text-[0.88rem]" track={`table-${p.id}`}>Check price</AffiliateLink>
-                </td>
               </tr>
             ))}
           </tbody>

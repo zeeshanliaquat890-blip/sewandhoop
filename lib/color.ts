@@ -21,7 +21,7 @@ export function rgbToLab([r, g, b]: [number, number, number]): Lab {
 
 export const hexToLab = (hex: string) => rgbToLab(hexToRgb(hex));
 
-/** CIEDE2000 colour difference. < 2 ≈ hard to tell apart, < 5 close, < 10 similar. */
+/** CIEDE2000 color difference. < 2 ≈ hard to tell apart, < 5 close, < 10 similar. */
 export function deltaE2000([L1, a1, b1]: Lab, [L2, a2, b2]: Lab): number {
   const rad = Math.PI / 180;
   const C1 = Math.hypot(a1, b1), C2 = Math.hypot(a2, b2);

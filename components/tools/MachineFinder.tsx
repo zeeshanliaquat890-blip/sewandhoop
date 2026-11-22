@@ -173,7 +173,7 @@ export default function MachineFinder({ ctx }: { ctx?: ToolCtx }) {
           <div className="mt-4">
             {step === 0 && (
               <Choices name="project" value={a.project} onChange={(v) => set("project", v)} options={[
-                { value: "garments", label: "Clothes", sub: "Dresses, tops, trousers" },
+                { value: "garments", label: "Clothes", sub: "Dresses, tops, pants" },
                 { value: "quilting", label: "Quilts", sub: "Piecing and quilting" },
                 { value: "embroidery", label: "Machine embroidery", sub: "Monograms, designs, patches" },
                 { value: "heavy", label: "Heavy fabrics", sub: "Denim, canvas, upholstery" },

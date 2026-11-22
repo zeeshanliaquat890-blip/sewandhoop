@@ -224,7 +224,7 @@ jobs:
   # that cannot open the Actions tab can read the real error.
   diagnose:
     needs: write
-    if: always()
+    if: always() && needs.write.result != 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -242,7 +242,8 @@ jobs:
           {
             echo "# Run ${{ github.run_number }} — failed step log (write job result: ${{ needs.write.result }})"
             echo '```'
-            gh run view ${{ github.run_id }} --log-failed 2>&1 | sed -E 's/\x1b\[[0-9;]*m//g' | cut -c1-400 | tail -n 150
+            job=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs" --jq '.jobs[] | select(.name=="write") | .id')
+            gh api "repos/${{ github.repository }}/actions/jobs/$job/logs" 2>&1 | grep -iE "error|fail|denied|invalid|not allowed|exit code|unauthor"  | sed -E 's/\x1b\[[0-9;]*m//g' | cut -c1-400 | tail -n 150
             echo '```'
           } > "$f"
           git config user.name "github-actions[bot]"

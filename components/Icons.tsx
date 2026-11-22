@@ -13,7 +13,7 @@ const base = (size = 24) => ({
   "aria-hidden": true,
 });
 
-/** Hand-drawn style category icons. Accent strokes use the madder colour. */
+/** Hand-drawn style category icons. Accent strokes use the madder color. */
 export function SiloIcon({ name, size = 32, className = "" }: { name: SiloIconName; size?: number; className?: string }) {
   const accent = "#b23a26";
   switch (name) {
