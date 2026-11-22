@@ -206,6 +206,17 @@ jobs:
             echo "- Push step: ${{ steps.push.outcome || 'skipped' }}"
             echo "- Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             echo ""
+            echo "## What the agent reported"
+            ef="${{ steps.pipeline.outputs.execution_file }}"
+            if [ -n "$ef" ] && [ -f "$ef" ]; then
+              echo '```'
+              jq -r '.[] | select(.type=="result") | "result: \(.subtype) | turns: \(.num_turns) | error: \(.is_error)\n\(.result // "" | tostring | .[0:3000])"' "$ef" 2>/dev/null || tail -c 3000 "$ef"
+              jq -r '.[] | select(.type=="system" and .subtype=="init") | "model: \(.model)"' "$ef" 2>/dev/null | head -1
+              echo '```'
+            else
+              echo "(no execution file — the action failed before the agent started; see the Run URL)"
+            fi
+            echo ""
             echo "## Last commits"
             git log -5 --format='- %h %s' origin/main 2>/dev/null || true
           } > "$f"
