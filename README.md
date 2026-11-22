@@ -131,9 +131,22 @@ The article lists, grouped by type, and the tools box are added below it automat
 
 ## Tools
 
-Each tool is a component in `components/tools/` registered in `components/tools/registry.tsx`.
-To build a real tool: open its file, add `"use client"` at the top and replace the placeholder.
-It then works on `/tools/<slug>/` and inside any article with `<Tool name="<slug>" />`.
+All 8 tools are live React components in `components/tools/`, registered in `components/tools/registry.tsx`.
+Each one works on its own page (`/tools/<slug>/`) **and** inside any article: `<Tool name="<slug>" />`.
+Page copy (intro, how-to steps, FAQ + FAQ schema) lives in `lib/tool-content.ts`.
+
+| Tool | File | Data it uses |
+|---|---|---|
+| Machine Finder | `MachineFinder.tsx` | Built-in rules. Links to guides only once they are published (otherwise to the hub). Reads `?project=` from the URL. |
+| Thread Color Converter | `ThreadColorConverter.tsx` | `public/data/threads.json`: 10 thread lines (Madeira Rayon & Polyneon, Isacord, Robison-Anton Rayon & Poly, Brother, Brother Country, Sulky Rayon, Floriani, Janome), loaded only when the tool opens. Matching uses CIEDE2000. |
+| Needle & Thread Selector | `NeedleThreadSelector.tsx` | 18 fabrics, built into the file. |
+| Machine Comparison | `MachineComparison.tsx` | `data/machines.ts`. **Contains demo machines** — replace them with real, checked specs. |
+| Embroidery Pricing Calculator | `EmbroideryPricingCalculator.tsx` | Formula only. |
+| Fabric Yardage Calculator | `FabricYardageCalculator.tsx` | Formula only (pieces, quilt backing, binding). |
+| Stitch Count & Time Estimator | `StitchCountEstimator.tsx` | Rules of thumb (stitches per sq in by style). |
+| Troubleshooting Wizard | `TroubleshootingWizard.tsx` | 10 problems with ordered fixes, built into the file. |
+
+Thread color data was adapted from the open-source Ink/Stitch project palettes (inkstitch.org, GPL-3.0); the source is credited under the tool.
 
 ## URL map
 
