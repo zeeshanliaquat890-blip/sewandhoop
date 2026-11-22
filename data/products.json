@@ -7,7 +7,7 @@
   "type": "Computerized sewing and quilting machine",
   "asin": null,
   "amazonQuery": "brother cs7000x sewing machine",
-  "image": null,
+  "image": "/images/products/brother-cs7000x.webp",
   "priceRange": "$200–$300",
   "specs": {
    "Type": "Computerized sewing and quilting machine",
@@ -31,7 +31,7 @@
   "type": "Sewing machine",
   "asin": null,
   "amazonQuery": "brother gx37 sewing machine",
-  "image": null,
+  "image": "/images/products/brother-gx37.webp",
   "priceRange": "Under $200",
   "specs": {
    "Type": "Sewing machine",
@@ -55,7 +55,7 @@
   "type": "Portable dial-select sewing machine",
   "asin": null,
   "amazonQuery": "singer m3500 sewing machine",
-  "image": null,
+  "image": "/images/products/singer-m3500.webp",
   "priceRange": "$150–$250",
   "specs": {
    "Type": "Portable dial-select sewing machine",
@@ -81,7 +81,7 @@
   "type": "Dial-select heavy-duty sewing machine",
   "asin": null,
   "amazonQuery": "singer heavy duty 4423 sewing machine",
-  "image": null,
+  "image": "/images/products/singer-4423.webp",
   "priceRange": "$200–$300",
   "specs": {
    "Type": "Dial-select heavy-duty sewing machine",
