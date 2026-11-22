@@ -130,7 +130,9 @@ jobs:
             - Never imply first-hand testing. Never quote a customer review or reproduce a rating.
             - The body links out only to Amazon (through components) and the reference hosts allowlisted in
               `scripts/audit.py`.
-            - SEO title 30-60 characters with no brand suffix; meta description 140-160.
+            - SEO title 50-60 characters (keyword first, then a few useful words), no brand suffix; meta
+              description 140-160. Slug = the primary keyword exactly, as in data/pages.json.
+            - Buying guides feature at least 10 verified products.
             - If a fact cannot be verified from a primary source, leave it out and say so in the quality report.
               An article missing a specification beats one that invents it.
             - Never change `site.config.ts` (the Amazon tag and the indexing switch belong to the owner).

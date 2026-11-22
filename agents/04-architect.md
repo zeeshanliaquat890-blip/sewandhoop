@@ -81,7 +81,7 @@ products, `product-master/published-index.csv`, `agents/packs.md`.
    not distinct, stop and write `Brief decision: Hold` with the reason.
 
 ## OUTPUTS
-`04-content-brief.md`: pack, SEO title (30-60 chars, keyword first, no brand suffix), meta description
+`04-content-brief.md`: pack, SEO title (50-60 chars, keyword first, no brand suffix), meta description
 (140-160 chars), H1, dek (one sentence), outline with the per-heading record above, keyword placement table,
 entity map, pending internal links, 4-8 FAQ questions drawn from People Also Ask and the gap list.
 

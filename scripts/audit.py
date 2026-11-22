@@ -217,7 +217,7 @@ def run_checks(path):
 
     # 17 -- SEO title
     seo = (fm_scalar(fm, "seoTitle") or "").strip()
-    add(17, "SEO title is 30-60 characters with no brand suffix", 30 <= len(seo) <= 60 and "|" not in seo and "Sew & Hoop" not in seo,
+    add(17, "SEO title is 50-60 characters with no brand suffix", 50 <= len(seo) <= 60 and "|" not in seo and "Sew & Hoop" not in seo,
         f"{len(seo)} chars: {seo[:70]}")
 
     # 18 -- meta description
@@ -234,7 +234,7 @@ def run_checks(path):
     if status not in ("draft", "ready", "hold"):
         extras.append(f"status is {status!r}")
     if plan is None:
-        extras.append(f"slug '{slug}' is not in data/pages.json")
+        extras.append(f"slug '{slug}' is not in data/pages.json (slug must be the primary keyword exactly)")
     elif fm_scalar(fm, "pageId") != plan["pageId"]:
         extras.append(f"pageId should be {plan['pageId']}")
     if pack in TEMPLATE and fm_scalar(fm, "template") != TEMPLATE[pack]:
