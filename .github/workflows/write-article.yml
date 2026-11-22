@@ -131,9 +131,12 @@ jobs:
             - If a fact cannot be verified from a primary source, leave it out and say so in the quality report.
               An article missing a specification beats one that invents it.
             - Never change `site.config.ts` (the Amazon tag and the indexing switch belong to the owner).
-          # Model: set the repository variable CLAUDE_MODEL to pin a specific model; default is the Opus alias.
+          # Runs started by the run-now relay come from github-actions[bot].
+          allowed_bots: "github-actions[bot]"
+          # Model: set the repository variable CLAUDE_MODEL (Settings -> Variables) to choose one; otherwise the
+          # action's default is used.
           claude_args: |
-            --model ${{ vars.CLAUDE_MODEL || 'opus' }}
+            ${{ vars.CLAUDE_MODEL && format('--model {0}', vars.CLAUDE_MODEL) || '' }}
             --max-turns 300
             --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite
 
@@ -215,5 +218,36 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git add "$f" && git commit -q -m "Run log ${{ github.run_number }}: ${{ steps.pick.outputs.page || 'nothing' }} ${{ steps.pipeline.outcome || 'skipped' }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && break; sleep 5; done
+
+  # After the writer job ends, save the log of any failed step into the repo (work/_runs/), so a Claude session
+  # that cannot open the Actions tab can read the real error.
+  diagnose:
+    needs: write
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Save failed-step logs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p work/_runs
+          f="work/_runs/$(date -u +%Y-%m-%d_%H%M)-run${{ github.run_number }}-log.md"
+          {
+            echo "# Run ${{ github.run_number }} — failed step log (write job result: ${{ needs.write.result }})"
+            echo '```'
+            gh run view ${{ github.run_id }} --log-failed 2>&1 | sed -E 's/\x1b\[[0-9;]*m//g' | cut -c1-400 | tail -n 150
+            echo '```'
+          } > "$f"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -q -m "Run log ${{ github.run_number }}: failed-step details (${{ needs.write.result }})" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && break; sleep 5; done
 
