@@ -1,0 +1,31 @@
+name: Run now (relay)
+
+# Claude sessions can push but cannot press "Run workflow". Pushing a change to .github/run-now.txt starts the
+# writer through workflow_dispatch (claude-code-action does not run on push events).
+# First line of the file: a page ID (e.g. S004) or blank for the next page in the queue.
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/run-now.txt"]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start "Write the next article"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          page="$(head -n1 .github/run-now.txt | tr -d '[:space:]')"
+          if echo "$page" | grep -qE '^S[0-9]+$'; then
+            gh workflow run write-article.yml --ref main -f page_id="$page"
+          else
+            gh workflow run write-article.yml --ref main
+          fi
+          echo "dispatched (page: ${page:-next in queue})"

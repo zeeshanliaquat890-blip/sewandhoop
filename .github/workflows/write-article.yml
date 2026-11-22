@@ -24,11 +24,6 @@ on:
   schedule:
     - cron: "30 23 * * *"   # 04:30 PKT fallback
     - cron: "45 1 * * *"    # 06:45 PKT fallback
-  # Lets Claude sessions (which can push but cannot press "Run workflow") start a run: commit a change to
-  # .github/run-now.txt. Optional first line = a page ID. Behaves like a manual run.
-  push:
-    branches: [main]
-    paths: [".github/run-now.txt"]
   workflow_dispatch:
     inputs:
       page_id:
@@ -76,10 +71,6 @@ jobs:
         run: |
           if [ -n "${{ inputs.page_id }}" ]; then
             echo "page=${{ inputs.page_id }}" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          if [ "${{ github.event_name }}" = "push" ]; then
-            want="$(head -n1 .github/run-now.txt | tr -d '[:space:]')"
-            if echo "$want" | grep -qE '^S[0-9]+$'; then echo "page=$want" >> "$GITHUB_OUTPUT"; exit 0; fi
           fi
           hour_pkt="$(TZ=Asia/Karachi date +%-H)"
           if [ "${{ github.event_name }}" = "schedule" ] && { [ "$hour_pkt" -lt "$WINDOW_FIRST_HOUR_PKT" ] || [ "$hour_pkt" -gt "$WINDOW_LAST_HOUR_PKT" ]; }; then
