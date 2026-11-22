@@ -63,7 +63,7 @@ export function Header() {
             Independent reviews. No brand can pay for a spot on our lists.
           </p>
           <nav aria-label="Utility" className="flex items-center gap-5">
-            <Link href="/how-we-test/" className="text-white/80 no-underline hover:text-white">How we test</Link>
+            <Link href="/how-we-review/" className="text-white/80 no-underline hover:text-white">How we review</Link>
             <Link href="/tools/" className="text-white/80 no-underline hover:text-white">Free tools</Link>
             <Link href="/about/" className="text-white/80 no-underline hover:text-white">About</Link>
           </nav>
@@ -111,7 +111,7 @@ export function Header() {
                 <div className="grid gap-2 sm:grid-cols-3">
                   <Link href="/tools/machine-finder/" className="btn btn-primary">Machine Finder</Link>
                   <Link href="/tools/" className="btn btn-ghost">Free tools</Link>
-                  <Link href="/how-we-test/" className="btn btn-ghost">How we test</Link>
+                  <Link href="/how-we-review/" className="btn btn-ghost">How we review</Link>
                 </div>
               </div>
             </details>

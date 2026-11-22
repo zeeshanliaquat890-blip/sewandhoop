@@ -14,7 +14,7 @@ export function AuthorBox() {
         </div>
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-line bg-cream px-6 py-3 text-[0.92rem]">
-        <Link href="/how-we-test/" className="font-bold no-underline">How we test machines →</Link>
+        <Link href="/how-we-review/" className="font-bold no-underline">How we research machines →</Link>
         <Link href="/affiliate-disclosure/" className="font-bold no-underline">How we make money →</Link>
       </div>
     </aside>

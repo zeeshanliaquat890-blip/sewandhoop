@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 /** Shared building blocks for every tool, so they all look like one family. */
 
-export type ToolCtx = { published: string[] };
+export type ToolCtx = { published: string[]; /** product id -> slug of its single review */ reviews?: Record<string, string> };
 
 export function ToolFrame({ title, badge, children }: { title: string; badge?: string; children: ReactNode }) {
   return (

@@ -12,7 +12,7 @@ export function Footer() {
         <div className="mx-auto flex max-w-site flex-col items-center justify-between gap-5 px-4 py-10 text-center sm:px-6 md:flex-row md:text-left">
           <div>
             <p className="font-serif text-[1.7rem] font-bold leading-tight text-white">Still not sure which machine is right for you?</p>
-            <p className="mt-1 text-white/85">Answer three quick questions and get a personal shortlist.</p>
+            <p className="mt-1 text-white/85">Answer four quick questions and get a personal shortlist.</p>
           </div>
           <Link href="/tools/machine-finder/" className="btn btn-light shrink-0">Try the Machine Finder</Link>
         </div>
@@ -37,7 +37,7 @@ export function Footer() {
             title="Sew & Hoop"
             links={[
               { href: "/about/", label: "About us" },
-              { href: "/how-we-test/", label: "How we test" },
+              { href: "/how-we-review/", label: "How we review" },
               { href: "/contact/", label: "Contact" },
               { href: "/affiliate-disclosure/", label: "Affiliate disclosure" },
               { href: "/privacy-policy/", label: "Privacy policy" },

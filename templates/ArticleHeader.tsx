@@ -56,7 +56,7 @@ function ArticleHero({ article }: { article: Article }) {
           <ul className="mt-5 flex flex-wrap gap-2 text-[0.88rem]">
             {n > 1 && <li className="label-cond rounded-full bg-ink px-3 py-1 text-white">{n} machines compared</li>}
             <li className="label-cond rounded-full border border-line bg-white px-3 py-1 text-ink-soft">Independently chosen</li>
-            <li className="label-cond rounded-full border border-line bg-white px-3 py-1 text-ink-soft"><Link href="/how-we-test/" className="text-ink-soft no-underline hover:text-madder">How we test →</Link></li>
+            <li className="label-cond rounded-full border border-line bg-white px-3 py-1 text-ink-soft"><Link href="/how-we-review/" className="text-ink-soft no-underline hover:text-madder">How we review →</Link></li>
           </ul>
 
           {article.hasAffiliateLinks && <div className="mt-6"><Disclosure /></div>}

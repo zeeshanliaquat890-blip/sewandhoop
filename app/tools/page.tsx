@@ -1,16 +1,12 @@
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata, breadcrumbLd } from "@/lib/seo";
+import { staticMetadata, breadcrumbLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { IconTool, IconArrow } from "@/components/Icons";
 import { getSilo } from "@/lib/content";
 
-export const metadata = pageMetadata({
-  title: "Free Sewing & Embroidery Tools and Calculators",
-  description: "Free calculators for sewists and embroiderers: machine finder, fabric yardage, embroidery pricing, thread color conversion and more.",
-  path: "/tools/",
-});
+export const metadata = staticMetadata("/tools/");
 
 export default function ToolsPage() {
   return (

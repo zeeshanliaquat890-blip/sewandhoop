@@ -22,7 +22,7 @@ export function ReviewTemplate({ article, content }: { article: Article; content
       <ArticleShell article={article}>
         {fm.verdict && <VerdictBox verdict={fm.verdict} product={isVs ? undefined : main} />}
         {isVs ? (
-          <ComparisonTable products={products} />
+          !/<ComparisonTable\b/.test(article.body) && <ComparisonTable products={products} />
         ) : (
           main && (
             <div className="my-10 grid gap-6">

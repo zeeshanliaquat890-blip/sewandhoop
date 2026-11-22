@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata, breadcrumbLd, faqLd } from "@/lib/seo";
+import { staticMetadata, breadcrumbLd, faqLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { toolRegistry, toolCtx } from "@/components/tools/registry";
@@ -22,8 +22,7 @@ export async function generateMetadata({ params }: Props) {
   const { tool } = await params;
   const t = siteConfig.tools.find((x) => x.slug === tool);
   if (!t) return {};
-  const c = toolContent[t.slug];
-  return pageMetadata({ title: `${t.name} — Free Online Tool`, description: c?.intro.slice(0, 158) ?? t.description, path: `/tools/${t.slug}/` });
+  return staticMetadata(`/tools/${t.slug}/`);
 }
 
 export default async function ToolPage({ params }: Props) {

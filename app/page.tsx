@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/site.config";
 import { getAllArticles, getArticlesForSilo, type Product, type Article } from "@/lib/content";
 import { getPlannedForSilo } from "@/lib/urlmap";
-import { pageMetadata, websiteLd } from "@/lib/seo";
+import { staticMetadata, websiteLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { Search } from "@/components/Search";
 import { SiloIcon, IconArrow, IconTool } from "@/components/Icons";
@@ -14,11 +14,7 @@ import { AffiliateLink } from "@/components/AffiliateLink";
 import { ProductImage } from "@/components/product/ProductImage";
 import { LogoMark } from "@/components/Logo";
 
-export const metadata: Metadata = pageMetadata({
-  title: `${siteConfig.name} — Sewing & Embroidery Machine Reviews and Guides`,
-  description: siteConfig.description,
-  path: "/",
-});
+export const metadata: Metadata = staticMetadata("/");
 
 const finderOptions = [
   { label: "Clothes & mending", q: "garments" },
@@ -172,7 +168,7 @@ export default function Home() {
         <div className="grid items-center gap-10 overflow-hidden rounded-3xl bg-linen p-6 sm:p-12 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <p className="kicker">Free tool · 1 minute</p>
-            <h2 id="finder" className="mt-1 text-[2.2rem] leading-tight sm:text-[2.6rem]">Answer three questions. Get a shortlist you can trust.</h2>
+            <h2 id="finder" className="mt-1 text-[2.2rem] leading-tight sm:text-[2.6rem]">Answer four questions. Get a shortlist you can trust.</h2>
             <p className="mt-4 text-[1.1rem] text-ink-soft">Tell us what you sew, how often and what you want to spend. The Machine Finder matches you with two or three machines that actually fit, not the most expensive one.</p>
             <Link href="/tools/machine-finder/" className="btn btn-primary mt-7">Start the Machine Finder <IconArrow /></Link>
           </div>
@@ -181,7 +177,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-2xl border-2 border-ink bg-white">
               <div className="flex items-center justify-between bg-ink px-6 py-3 text-white">
                 <span className="label-cond text-[0.85rem] text-[#e9a796]">Pattern No. 01</span>
-                <span className="label-cond text-[0.85rem]">Question 1 of 3</span>
+                <span className="label-cond text-[0.85rem]">Question 1 of 4</span>
               </div>
               <div className="p-6">
                 <p className="font-serif text-[1.5rem] font-bold">What will you sew most?</p>
@@ -196,7 +192,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-5 flex gap-1.5" aria-hidden="true">
-                  <span className="h-1.5 flex-1 rounded-full bg-madder" /><span className="h-1.5 flex-1 rounded-full bg-linen-deep" /><span className="h-1.5 flex-1 rounded-full bg-linen-deep" />
+                  <span className="h-1.5 flex-1 rounded-full bg-madder" /><span className="h-1.5 flex-1 rounded-full bg-linen-deep" /><span className="h-1.5 flex-1 rounded-full bg-linen-deep" /><span className="h-1.5 flex-1 rounded-full bg-linen-deep" />
                 </div>
               </div>
             </div>
@@ -226,7 +222,7 @@ export default function Home() {
             <p className="label-cond text-[0.95rem] text-[#e9a796]">How we rate machines</p>
             <h2 id="score" className="mt-1 text-[2.2rem] leading-tight text-white sm:text-[2.6rem]">The Sew Score: one honest number, five things that matter</h2>
             <p className="mt-4 max-w-xl text-[1.1rem] text-white/75">
-              Every machine we recommend gets a score out of 100. It&apos;s built from the same five checks every time, so a 90 in one guide means the same thing as a 90 in another.
+              Every machine we recommend gets a research-based score out of 100, built from checked specs and long-term owner reports. Same five parts, same method, every time — so a 90 in one guide means the same as a 90 in another.
             </p>
             <ol className="mt-6 grid gap-3 sm:grid-cols-2">
               {["Stitch quality", "Ease of use", "Build & reliability", "Features for the price", "Owner satisfaction"].map((t, i) => (
@@ -236,13 +232,13 @@ export default function Home() {
                 </li>
               ))}
             </ol>
-            <Link href="/how-we-test/" className="btn btn-light mt-8">How we test <IconArrow /></Link>
+            <Link href="/how-we-review/" className="btn btn-light mt-8">How we score machines <IconArrow /></Link>
           </div>
           <div className="rounded-2xl bg-white p-6 text-ink sm:p-8">
             <div className="flex items-center gap-4">
               <ScoreRing score={91} size={92} />
               <div>
-                <p className="label-cond text-[0.85rem] text-ink-mute">Example score card</p>
+                <p className="label-cond text-[0.85rem] text-ink-mute">Example score card (illustration)</p>
                 <p className="font-serif text-[1.3rem] font-bold leading-tight">A great first machine</p>
               </div>
             </div>

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata } from "@/lib/seo";
+import { staticMetadata } from "@/lib/seo";
 import { SimplePage } from "@/components/SimplePage";
 
-export const metadata = pageMetadata({ title: "Privacy Policy", description: `How ${siteConfig.name} collects, uses and protects information.`, path: "/privacy-policy/" });
+export const metadata = staticMetadata("/privacy-policy/");
 
 export default function Privacy() {
   const s = siteConfig.name;

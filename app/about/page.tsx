@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata } from "@/lib/seo";
+import { staticMetadata } from "@/lib/seo";
 import { SimplePage } from "@/components/SimplePage";
 
-export const metadata = pageMetadata({ title: "About Us", description: `Who is behind ${siteConfig.name}, how we choose machines, and how the site is funded.`, path: "/about/" });
+export const metadata = staticMetadata("/about/");
 
 export default function About() {
   return (

@@ -172,3 +172,36 @@ If you have your own `URL-MAP.csv`, replace this file with it. Keep the same col
 7. After it goes live, submit `https://sewandhoop.com/sitemap.xml` in Google Search Console.
 
 Every push to `main` deploys automatically.
+
+---
+
+## Automatic daily articles (the pipeline)
+
+The site writes and publishes **one article a day by itself**, using the same ten-agent system as the owner's
+other site — but completely separate (see `CLAUDE.md`, Rule 0).
+
+- Plan: `plan/CONTENT-PLAN-FINAL.xlsx` → `python scripts/export_plan.py` → `data/pages.json` (235 pages, IDs `S004`…)
+  and `data/schedule.json` (writing order = the plan's priority order).
+- Engine: `agents/01-scout.md` … `agents/10-publisher.md`, structures in `agents/packs.md`, the Sew Score method in
+  `agents/sew-score.md`. Edit the texts in `scripts/gen_agents.py`, then run it.
+- Facts: `product-master/*.csv` (append-only ledgers) → `python scripts/build_data.py` → `data/products.json`,
+  `claims.json`, `insights.json`. Every figure in an article carries `<Cite id="C…"/>`; owner patterns use `<Owners>`.
+- Gate: `python scripts/audit.py content/articles/<slug>.mdx` — 15 code checks + 4 judged by the agent.
+- Publish gate: an article is built only when `status: ready` **and** `publishAt` ≤ today (US Eastern).
+  Run `npm run dev` (or set `PREVIEW_ALL=true` locally) to see drafts and the demo articles. Never set
+  `PREVIEW_ALL` on Vercel.
+- Runner: `.github/workflows/write-article.yml` — starts only between 04:00 and 08:59 Pakistan time (3D Print
+  Picks writes at ~01:30 and ~09:00 PKT), one article per day, then pushes; Vercel deploys on push.
+
+### One-time setup (owner)
+
+1. **Secret** — GitHub → this repo → Settings → Secrets and variables → Actions → *New repository secret*:
+   `CLAUDE_CODE_OAUTH_TOKEN` = the token from `claude setup-token` (the same kind the other site uses).
+2. **Trigger** — at cron-job.org, a job that runs **daily at 00:30 UTC** (05:30 PKT) and sends
+   `POST https://api.github.com/repos/zeeshanliaquat890-blip/sewandhoop/actions/workflows/write-article.yml/dispatches`
+   with headers `Authorization: Bearer <a GitHub fine-grained token with Actions: read & write on this repo>`,
+   `Accept: application/vnd.github+json` and body `{"ref":"main"}`. GitHub's own schedule is only a fallback.
+3. **First article** — Actions tab → *Write the next article* → *Run workflow* (manual runs ignore the time window).
+
+Indexing stays off (`allowIndexing: false` in `site.config.ts`) until the owner switches it on; IndexNow
+submissions start automatically after that.

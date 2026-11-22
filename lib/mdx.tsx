@@ -12,6 +12,9 @@ import { SpecsTable } from "@/components/product/SpecsTable";
 import { Steps, Step } from "@/components/Steps";
 import { Callout } from "@/components/Callout";
 import { Tool } from "@/components/tools/registry";
+import { Cite, Owners, KeyTakeaways, Verdict, BuySkip } from "@/components/ArticleBits";
+import { QuickPicks } from "@/components/product/QuickPicks";
+import { ComparisonTable } from "@/components/product/ComparisonTable";
 
 /** Components available inside every MDX file. */
 function components(article?: Pick<Article, "fm">) {
@@ -29,6 +32,14 @@ function components(article?: Pick<Article, "fm">) {
     Step,
     Callout,
     Tool,
+    Cite,
+    Owners,
+    KeyTakeaways,
+    Verdict,
+    BuySkip,
+    /** <QuickPicks /> and <ComparisonTable columns={[...]} /> read the frontmatter products */
+    QuickPicks: () => <QuickPicks products={products} />,
+    ComparisonTable: ({ columns }: { columns?: string[] }) => <ComparisonTable products={products} columns={columns} />,
     /** <ProductBox id="model-a">long review…</ProductBox> — data from frontmatter `products` */
     ProductBox: ({ id, children }: { id: string; children?: ReactNode }) => {
       const i = products.findIndex((p) => p.id === id);

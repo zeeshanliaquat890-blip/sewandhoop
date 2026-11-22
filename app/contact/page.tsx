@@ -1,8 +1,8 @@
 import { siteConfig } from "@/site.config";
-import { pageMetadata } from "@/lib/seo";
+import { staticMetadata } from "@/lib/seo";
 import { SimplePage } from "@/components/SimplePage";
 
-export const metadata = pageMetadata({ title: "Contact Us", description: `Get in touch with the ${siteConfig.name} team.`, path: "/contact/" });
+export const metadata = staticMetadata("/contact/");
 
 export default function Contact() {
   return (

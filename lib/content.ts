@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import GithubSlugger from "github-slugger";
 import { getUrlMapRow, type UrlMapRow } from "./urlmap";
 import { siteConfig } from "@/site.config";
+import productsData from "@/data/products.json";
 
 export type Template = "roundup" | "review" | "informational";
 
@@ -31,9 +32,19 @@ export type Product = {
 export type Faq = { q: string; a: string };
 
 export type ArticleFrontmatter = {
+  /** Page ID from data/pages.json, e.g. "S004" */
+  pageId?: string;
   title: string;
+  /** Full <title>, 30–60 characters, no brand suffix. Falls back to `title`. */
+  seoTitle?: string;
   description: string;
   template: Template;
+  contentType?: string;
+  primaryKeyword?: string;
+  /** Publish gate: only "ready" pages whose publishAt has arrived (US Eastern) are built. */
+  status?: "draft" | "ready" | "hold" | "example";
+  publishAt?: string;
+  updatedAt?: string;
   published: string; // YYYY-MM-DD
   updated?: string;
   author?: string;
@@ -63,6 +74,60 @@ export type Article = {
   hasAffiliateLinks: boolean;
   readingMinutes: number;
 };
+
+/* ---------- product records (data/products.json, built from product-master/) ---------- */
+
+type ProductRecord = {
+  id: string; name: string; asin?: string | null; amazonQuery?: string | null; image?: string | null;
+  priceRange?: string | null; specs?: Record<string, string>; score?: number | null; scores?: Record<string, number> | null;
+};
+const PRODUCTS = productsData as unknown as Record<string, ProductRecord>;
+
+export function getProductRecord(id: string) {
+  return PRODUCTS[id];
+}
+export function allProductRecords() {
+  return Object.values(PRODUCTS);
+}
+
+/**
+ * An article names a product by id and adds only what belongs to that page (rank, role, verdict,
+ * pros/cons). Facts, the Amazon link, the price band and the Sew Score come from the product record,
+ * so one ledger edit updates every page. Inline products (with a `name`) are used as-is (demo pages).
+ */
+function resolveProduct(p: Product & { verdict?: string; rank?: number; role?: string }): Product {
+  const rec = PRODUCTS[p.id];
+  if (!rec) return { ...p, badge: p.badge ?? p.role, summary: p.summary ?? p.verdict };
+  return {
+    ...p,
+    name: p.name || rec.name,
+    asin: p.asin ?? rec.asin ?? undefined,
+    amazonQuery: p.amazonQuery ?? rec.amazonQuery ?? undefined,
+    image: p.image ?? rec.image ?? undefined,
+    priceRange: p.priceRange ?? rec.priceRange ?? undefined,
+    specs: p.specs ?? rec.specs,
+    score: p.score ?? rec.score ?? undefined,
+    scores: p.scores ?? rec.scores ?? undefined,
+    summary: p.summary ?? p.verdict,
+    badge: p.badge ?? p.role,
+  };
+}
+
+/** "Today" for the publish gate, in US Eastern time. */
+export function usToday() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+}
+
+/**
+ * The publish gate. A page is built only when it is marked ready AND its publishAt date has arrived.
+ * Legacy/demo files without a status follow their old behaviour; status "example" pages show only in
+ * `next dev` or with PREVIEW_ALL=true (never set PREVIEW_ALL on Vercel).
+ */
+export function isLive(fm: ArticleFrontmatter) {
+  if (process.env.PREVIEW_ALL === "true" || process.env.NODE_ENV === "development") return fm.status !== "hold";
+  if (fm.status === undefined) return !fm.draft;
+  return fm.status === "ready" && String(fm.publishAt ?? "") <= usToday();
+}
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 const HUBS_DIR = path.join(process.cwd(), "content", "hubs");
@@ -101,7 +166,6 @@ export function extractHeadings(body: string, fm: Partial<ArticleFrontmatter> = 
 export function getAllArticles(): Article[] {
   if (cache) return cache;
   if (!fs.existsSync(ARTICLES_DIR)) return (cache = []);
-  const isProd = process.env.NODE_ENV === "production";
   const list: Article[] = [];
   for (const file of fs.readdirSync(ARTICLES_DIR)) {
     if (!/\.mdx?$/.test(file)) continue;
@@ -109,7 +173,10 @@ export function getAllArticles(): Article[] {
     const raw = fs.readFileSync(path.join(ARTICLES_DIR, file), "utf8");
     const { data, content } = matter(raw);
     const fm = data as ArticleFrontmatter;
-    if (fm.draft && isProd) continue;
+    if (!isLive(fm)) continue;
+    if (fm.products) fm.products = fm.products.map(resolveProduct);
+    if (fm.publishAt && !fm.published) fm.published = String(fm.publishAt);
+    if (fm.updatedAt && !fm.updated) fm.updated = String(fm.updatedAt);
     const map = getUrlMapRow(slug);
     if (!map) {
       console.warn(`[content] "${slug}" is not in data/url-map.csv — check the file name.`);
@@ -126,7 +193,7 @@ export function getAllArticles(): Article[] {
       hasAffiliateLinks:
         fm.template !== "informational" ||
         Boolean(fm.products?.length) ||
-        /<(AffiliateLink|ProductBox|QuickPicks|ComparisonTable)\b/.test(content),
+        /<(AffiliateLink|ProductBox|QuickPicks|ComparisonTable|Verdict)\b/.test(content),
       readingMinutes: Math.max(1, Math.round(words / 230)),
     });
   }

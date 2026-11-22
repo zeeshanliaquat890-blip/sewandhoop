@@ -24,7 +24,10 @@ export const toolRegistry: Record<string, ComponentType<{ ctx?: ToolCtx }>> = {
 
 /** Which article slugs are live — tools only link to guides that exist. */
 export function toolCtx(): ToolCtx {
-  return { published: getAllArticles().map((a) => a.slug) };
+  const all = getAllArticles();
+  const reviews: Record<string, string> = {};
+  for (const a of all) if (a.fm.template === "review" && a.fm.products?.length === 1) reviews[a.fm.products[0].id] = a.slug;
+  return { published: all.map((a) => a.slug), reviews };
 }
 
 /** Drop any tool inside an MDX article: <Tool name="fabric-yardage-calculator" /> */

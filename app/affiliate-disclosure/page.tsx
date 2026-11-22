@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata } from "@/lib/seo";
+import { staticMetadata } from "@/lib/seo";
 import { SimplePage } from "@/components/SimplePage";
 
-export const metadata = pageMetadata({ title: "Affiliate Disclosure", description: `How ${siteConfig.name} earns money and how that affects (and doesn't affect) our recommendations.`, path: "/affiliate-disclosure/" });
+export const metadata = staticMetadata("/affiliate-disclosure/");
 
 export default function AffiliateDisclosure() {
   return (

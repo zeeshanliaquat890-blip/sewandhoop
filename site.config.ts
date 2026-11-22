@@ -28,7 +28,7 @@ export const siteConfig = {
   author: {
     name: "The Sew & Hoop Editors",
     url: "/about/",
-    bio: "We are a small team of home sewists and embroiderers. We read the manuals, compare the spec sheets and sit with owner feedback so you don't buy the wrong machine.",
+    bio: "We're a small team of home sewists and embroiderers. We check every spec against the manufacturer's manual, read years of owner reports and explain it plainly, so you don't buy the wrong machine.",
   },
 
   contact: {

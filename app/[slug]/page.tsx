@@ -4,7 +4,7 @@ import { siteConfig } from "@/site.config";
 import { getAllArticles, getArticle, getArticlesForSilo, getHubContent, getSilo, extractHeadings } from "@/lib/content";
 import { getPlannedForSilo } from "@/lib/urlmap";
 import { renderMdx } from "@/lib/mdx";
-import { pageMetadata, articleLd, breadcrumbLd, faqLd, itemListLd, productReviewLd } from "@/lib/seo";
+import { pageMetadata, staticMetadata, articleLd, breadcrumbLd, faqLd, itemListLd, productReviewLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { HubTemplate } from "@/templates/HubTemplate";
 import { RoundupTemplate } from "@/templates/RoundupTemplate";
@@ -25,16 +25,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const silo = getSilo(slug);
   if (silo) {
-    const hub = getHubContent(slug);
-    return pageMetadata({
-      title: (hub?.fm.title as string) || `${silo.name}: Buying Guides, Reviews & How-Tos`,
-      description: (hub?.fm.description as string) || silo.description,
-      path: `/${slug}/`,
-    });
+    return staticMetadata(`/${slug}/`);
   }
   const a = getArticle(slug);
   if (!a) return {};
-  return pageMetadata({ title: a.fm.title, description: a.fm.description, path: a.url, type: "article", published: a.fm.published, updated: a.fm.updated, noindex: a.fm.noindex });
+  return pageMetadata({ title: a.fm.seoTitle || a.fm.title, absoluteTitle: Boolean(a.fm.seoTitle), description: a.fm.description, path: a.url, type: "article", published: a.fm.published, updated: a.fm.updated, noindex: a.fm.noindex });
 }
 
 export default async function Page({ params }: Props) {

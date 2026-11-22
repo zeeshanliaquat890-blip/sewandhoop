@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/**": ["./content/**/*", "./data/**/*", "./assets/**/*"],
   },
+  async redirects() {
+    return [{ source: "/how-we-test/", destination: "/how-we-review/", permanent: true }];
+  },
   async headers() {
     return [
       // Whole-site noindex header while indexing is switched off in site.config.ts

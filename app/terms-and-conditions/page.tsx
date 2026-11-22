@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { siteConfig } from "@/site.config";
-import { pageMetadata } from "@/lib/seo";
+import { staticMetadata } from "@/lib/seo";
 import { SimplePage } from "@/components/SimplePage";
 
-export const metadata = pageMetadata({ title: "Terms & Conditions", description: `The terms for using ${siteConfig.name}.`, path: "/terms-and-conditions/" });
+export const metadata = staticMetadata("/terms-and-conditions/");
 
 export default function Terms() {
   const s = siteConfig.name;

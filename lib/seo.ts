@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/site.config";
 
+import { seoFor } from "./seo-pages";
+
+/** Metadata for a non-article page, from lib/seo-pages.ts. */
+export function staticMetadata(path: string, type: "website" | "article" = "website"): Metadata {
+  const e = seoFor(path);
+  return pageMetadata({ title: e.title, absoluteTitle: true, description: e.description, path, type });
+}
+
 export const absUrl = (p: string) => new URL(p, siteConfig.url).toString();
 
 export function pageMetadata({
   title,
+  absoluteTitle,
   description,
   path,
   type = "website",
@@ -13,6 +22,8 @@ export function pageMetadata({
   noindex,
 }: {
   title: string;
+  /** When true the title is used as the whole <title> (no " | Sew & Hoop" suffix). */
+  absoluteTitle?: boolean;
   description: string;
   path: string;
   type?: "website" | "article";
@@ -21,7 +32,7 @@ export function pageMetadata({
   noindex?: boolean;
 }): Metadata {
   return {
-    title,
+    title: absoluteTitle ? { absolute: title } : title,
     description,
     alternates: { canonical: path },
     robots: !siteConfig.allowIndexing
@@ -50,6 +61,7 @@ const org = () => ({
   name: siteConfig.name,
   url: siteConfig.url,
   logo: absUrl("/logo-512.png"),
+  ...(Object.values(siteConfig.social).filter(Boolean).length ? { sameAs: Object.values(siteConfig.social).filter(Boolean) } : {}),
 });
 
 export function breadcrumbLd(items: { name: string; url: string }[]) {

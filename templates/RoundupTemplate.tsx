@@ -13,8 +13,9 @@ export function RoundupTemplate({ article, content }: { article: Article; conten
   return (
     <>
       <ArticleShell article={article}>
-        <QuickPicks products={products} />
-        <ComparisonTable products={products} />
+        {/* Placed by the writer in the body; added here only if the body doesn't place them */}
+        {!/<QuickPicks\b/.test(article.body) && <QuickPicks products={products} />}
+        {!/<ComparisonTable\b/.test(article.body) && <ComparisonTable products={products} />}
         <div className="prose-sew">{content}</div>
         <Faq items={article.fm.faq ?? []} />
         <AuthorBox />
