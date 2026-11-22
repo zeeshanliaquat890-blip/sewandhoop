@@ -50,6 +50,8 @@ function components(article?: Pick<Article, "fm">) {
 }
 
 export async function renderMdx(source: string, article?: Pick<Article, "fm">) {
+  // <Cite/> renders nothing, so drop the space in front of it ("97 stitch applications <Cite/>, so" -> "...applications, so").
+  source = source.replace(/[ \t]+(<Cite\b[^>]*\/>)/g, "$1");
   const { default: Content } = await evaluate(source, {
     ...runtime,
     remarkPlugins: [remarkGfm],

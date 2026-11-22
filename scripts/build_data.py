@@ -16,6 +16,7 @@ import csv
 import io
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PM = os.path.join(ROOT, "product-master")
@@ -61,6 +62,8 @@ def main():
         if not pid:
             continue
         specs = {label: clean(r.get(col)) for label, col in SPECS if clean(r.get(col))}
+        if re.fullmatch(r"[\d,]+", specs.get("Max speed", "")):
+            specs["Max speed"] += " spm"
         scores = {label: num(r.get(col)) for label, col in SCORES if num(r.get(col)) is not None}
         products[pid] = {
             "id": pid,
