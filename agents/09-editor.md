@@ -64,10 +64,13 @@ Per page, in `work/{PageID}-{slug}/`:
 Audited draft, `04-content-brief.md`, `07-quality-report.md`.
 
 ## JOB
-1. SEO title: **50-60 characters, primary keyword first, no brand suffix** -- what you write is the whole
-   `<title>`. Use the room: after the keyword add a few useful words (the number of picks, who it's for, a clear
-   benefit, the year only if the page is current for it), e.g. "Best Sewing Machine for Beginners: 10 Easy Picks
-   for 2026" -- never pad with filler or repeat the keyword. Slug = the primary keyword exactly, as in
+1. SEO title: **50-60 characters, no brand suffix** -- what you write is the whole `<title>`. Google ranks a page
+   for many related searches, so write the title for people and for the whole keyword cluster: it must contain
+   the main terms of the primary keyword (exact order not required, a natural variation is fine), and it should
+   pick up one or two strong secondary terms where they read naturally. Keyword placement is a judgement call:
+   put the main terms early when it reads well, but never force an awkward exact match. Use the room for useful
+   words (number of picks, who it's for, a clear benefit, the year only if the page is current for it), e.g.
+   "10 Best Sewing Machines for Beginners, Easy to Learn (2026)". Never pad with filler or repeat a word. Slug = the primary keyword exactly, as in
    `data/pages.json`; never add or remove words. Meta description **140-160 characters**, accurate and click-worthy without overpromising. One H1
    (frontmatter `title`) / logical H2-H3 / primary keyword in the first 100 words once / secondary keywords only
    where the heading genuinely covers them / slug exactly as `data/pages.json` / schema only for **visible**
@@ -84,7 +87,7 @@ Audited draft, `04-content-brief.md`, `07-quality-report.md`.
 ---
 pageId: "S004"
 title: "Best Sewing Machines for Beginners"      # the H1
-seoTitle: "Best Sewing Machine for Beginners: 10 Easy Picks for 2026"   # 50-60 chars
+seoTitle: "10 Best Sewing Machines for Beginners, Easy to Learn (2026)"   # 50-60 chars
 description: "140-160 characters…"
 template: roundup            # roundup (pack A) | review (packs B and V) | informational (pack C)
 contentType: "Buying Guide"

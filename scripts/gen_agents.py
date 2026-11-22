@@ -209,8 +209,10 @@ products, `product-master/published-index.csv`, `agents/packs.md`.
    Never add a section for length.
 2. Entity map in three layers: core (recur naturally), heading-specific, supporting (only where they improve
    meaning). Never force entities in.
-3. Keyword placement: primary keyword -> SEO title, H1, first 100 words, once each. Secondary keywords -> only the
-   H2/H3 that genuinely covers that ground. No exact-match repetition targets. Write down where each goes.
+3. Keyword placement: the primary keyword's main terms -> SEO title and H1 (natural wording, exact match not
+   required), and the primary keyword itself once in the first 100 words. Secondary keywords -> the title (one or
+   two, if natural) and only the H2/H3 that genuinely covers that ground. No exact-match repetition targets.
+   Write down where each goes.
 4. For every planned heading record: reader question answered / search intent served / entities / approved
    Claim IDs / approved Insight IDs (recurring or dominant only) / target length / internal link (only if the
    target is `Published` in `published-index.csv`, or is a hub, tool or site page; otherwise list under "Pending
@@ -219,7 +221,7 @@ products, `product-master/published-index.csv`, `agents/packs.md`.
    not distinct, stop and write `Brief decision: Hold` with the reason.
 
 ## OUTPUTS
-`04-content-brief.md`: pack, SEO title (50-60 chars, keyword first, no brand suffix), meta description
+`04-content-brief.md`: pack, SEO title (50-60 chars, main keyword terms plus secondary terms, no brand suffix), meta description
 (140-160 chars), H1, dek (one sentence), outline with the per-heading record above, keyword placement table,
 entity map, pending internal links, 4-8 FAQ questions drawn from People Also Ask and the gap list.
 
@@ -339,10 +341,13 @@ AGENTS["09-editor"] = ("Editor -- SEO, voice and the final file", """## INPUTS
 Audited draft, `04-content-brief.md`, `07-quality-report.md`.
 
 ## JOB
-1. SEO title: **50-60 characters, primary keyword first, no brand suffix** -- what you write is the whole
-   `<title>`. Use the room: after the keyword add a few useful words (the number of picks, who it's for, a clear
-   benefit, the year only if the page is current for it), e.g. "Best Sewing Machine for Beginners: 10 Easy Picks
-   for 2026" -- never pad with filler or repeat the keyword. Slug = the primary keyword exactly, as in
+1. SEO title: **50-60 characters, no brand suffix** -- what you write is the whole `<title>`. Google ranks a page
+   for many related searches, so write the title for people and for the whole keyword cluster: it must contain
+   the main terms of the primary keyword (exact order not required, a natural variation is fine), and it should
+   pick up one or two strong secondary terms where they read naturally. Keyword placement is a judgement call:
+   put the main terms early when it reads well, but never force an awkward exact match. Use the room for useful
+   words (number of picks, who it's for, a clear benefit, the year only if the page is current for it), e.g.
+   "10 Best Sewing Machines for Beginners, Easy to Learn (2026)". Never pad with filler or repeat a word. Slug = the primary keyword exactly, as in
    `data/pages.json`; never add or remove words. Meta description **140-160 characters**, accurate and click-worthy without overpromising. One H1
    (frontmatter `title`) / logical H2-H3 / primary keyword in the first 100 words once / secondary keywords only
    where the heading genuinely covers them / slug exactly as `data/pages.json` / schema only for **visible**
@@ -359,7 +364,7 @@ Audited draft, `04-content-brief.md`, `07-quality-report.md`.
 ---
 pageId: "S004"
 title: "Best Sewing Machines for Beginners"      # the H1
-seoTitle: "Best Sewing Machine for Beginners: 10 Easy Picks for 2026"   # 50-60 chars
+seoTitle: "10 Best Sewing Machines for Beginners, Easy to Learn (2026)"   # 50-60 chars
 description: "140-160 characters…"
 template: roundup            # roundup (pack A) | review (packs B and V) | informational (pack C)
 contentType: "Buying Guide"
