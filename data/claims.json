@@ -1,1 +1,56 @@
-{}
+{
+ "C0001": {
+  "product": "brother-cs7000x",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0002": {
+  "product": "brother-cs7000x",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0003": {
+  "product": "brother-cs7000x",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0004": {
+  "product": "brother-cs7000x",
+  "claim": "Free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0005": {
+  "product": "brother-cs7000x",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0006": {
+  "product": "brother-gx37",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0007": {
+  "product": "brother-gx37",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0008": {
+  "product": "brother-gx37",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ },
+ "C0009": {
+  "product": "brother-gx37",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/gx37"
+ }
+}
