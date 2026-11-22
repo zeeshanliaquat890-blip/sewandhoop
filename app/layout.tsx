@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { siteName: siteConfig.name, locale: siteConfig.locale, type: "website" },
   twitter: { card: "summary_large_image" },
   formatDetection: { telephone: false },
+  // Site-wide noindex while siteConfig.allowIndexing is false
+  robots: siteConfig.allowIndexing ? undefined : { index: false, follow: false, googleBot: { index: false, follow: false } },
 };
 
 export const viewport: Viewport = {

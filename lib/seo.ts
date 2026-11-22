@@ -24,7 +24,11 @@ export function pageMetadata({
     title,
     description,
     alternates: { canonical: path },
-    robots: noindex ? { index: false, follow: true } : undefined,
+    robots: !siteConfig.allowIndexing
+      ? { index: false, follow: false, googleBot: { index: false, follow: false } }
+      : noindex
+        ? { index: false, follow: true }
+        : undefined,
     openGraph: {
       title,
       description,

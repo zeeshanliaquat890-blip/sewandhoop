@@ -11,6 +11,13 @@ export const siteConfig = {
   description:
     "Plain-spoken buying guides, reviews and how-tos for sewing machines, embroidery machines, sergers and quilting machines — written for home sewists in the USA.",
   locale: "en_US",
+
+  /**
+   * SEARCH ENGINE INDEXING SWITCH
+   * false = whole site is hidden from Google (noindex meta tag + X-Robots-Tag header + robots.txt note).
+   * Set to true when the site is ready to launch, then push.
+   */
+  allowIndexing: false,
   language: "en-US",
 
   amazon: {
