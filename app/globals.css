@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------
+   Sew & Hoop — design tokens
+   Warm paper, ink-brown text, ONE accent: madder red (thread red).
+------------------------------------------------------------------ */
+@theme {
+  --color-paper: #fbf7f0;
+  --color-linen: #f3ece1;
+  --color-linen-deep: #e9dfcf;
+  --color-line: #ddd2c1;
+  --color-ink: #26221e;
+  --color-ink-soft: #57504a;
+  --color-ink-mute: #6f675f;
+  --color-madder: #a63d29;
+  --color-madder-deep: #86301f;
+  --color-madder-tint: #f6e4dc;
+
+  --font-serif: var(--font-young-serif), "Georgia", "Times New Roman", serif;
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --container-prose: 46rem; /* 736px reading column */
+  --container-site: 76rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5.5rem;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.7;
+  }
+  @media (min-width: 768px) {
+    body { font-size: 1.1875rem; } /* 19px */
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif text-ink;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  a { @apply text-madder underline decoration-1 underline-offset-[0.2em]; }
+  a:hover { @apply text-madder-deep decoration-2; }
+  ::selection { background: var(--color-madder-tint); }
+  :focus-visible { outline: 3px solid var(--color-madder); outline-offset: 3px; border-radius: 2px; }
+  img { max-width: 100%; height: auto; }
+}
+
+@layer components {
+  /* Running stitch rule — the signature divider */
+  .stitch-rule {
+    height: 2px;
+    border: 0;
+    background: repeating-linear-gradient(90deg, var(--color-madder) 0 10px, transparent 10px 17px);
+    opacity: 0.85;
+  }
+  .stitch-rule-ink {
+    height: 2px;
+    border: 0;
+    background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px);
+  }
+
+  /* Sewn patch: linen fill with a stitched outline inset from the edge */
+  .patch {
+    background: var(--color-linen);
+    border-radius: 10px;
+    outline: 2px dashed color-mix(in srgb, var(--color-ink) 28%, transparent);
+    outline-offset: -9px;
+  }
+  .patch-madder {
+    outline-color: color-mix(in srgb, var(--color-madder) 60%, transparent);
+  }
+
+  /* Woven garment label */
+  .woven-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    background: var(--color-madder);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.35em 1.1em;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%, 7px 50%);
+  }
+  .woven-label-ink { background: var(--color-ink); }
+
+  /* Eyebrow / kicker text */
+  .kicker {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-madder);
+  }
+
+  /* Primary button (affiliate CTA) */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+  }
+  .btn-primary { background: var(--color-madder); color: #fff; }
+  .btn-primary:hover { background: var(--color-madder-deep); color: #fff; }
+  .btn-ghost { background: transparent; color: var(--color-ink); box-shadow: inset 0 0 0 2px var(--color-ink); }
+  .btn-ghost:hover { background: var(--color-ink); color: var(--color-paper); }
+
+  /* Long-form article typography */
+  .prose-sew { color: var(--color-ink); }
+  .prose-sew > * + * { margin-top: 1.15em; }
+  .prose-sew h2 { font-size: 1.85rem; margin-top: 2.2em; margin-bottom: 0.2em; }
+  .prose-sew h3 { font-size: 1.4rem; margin-top: 1.8em; }
+  .prose-sew h2 + *, .prose-sew h3 + * { margin-top: 0.6em; }
+  .prose-sew ul { list-style: none; padding-left: 0; }
+  .prose-sew ul > li { position: relative; padding-left: 1.6em; margin-top: 0.45em; }
+  .prose-sew ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0.25em;
+    top: 0.72em;
+    width: 0.8em;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--color-madder) 0 4px, transparent 4px 6px);
+  }
+  .prose-sew ol { list-style: decimal; padding-left: 1.4em; }
+  .prose-sew ol > li { margin-top: 0.45em; padding-left: 0.3em; }
+  .prose-sew ol > li::marker { color: var(--color-madder); font-weight: 700; }
+  .prose-sew blockquote {
+    border-left: 3px solid var(--color-madder);
+    padding: 0.2em 0 0.2em 1.1em;
+    font-family: var(--font-serif);
+    font-size: 1.25em;
+    line-height: 1.45;
+    color: var(--color-ink-soft);
+  }
+  .prose-sew strong { font-weight: 700; }
+  .prose-sew hr { height: 2px; border: 0; margin: 2.5rem 0; background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px); }
+  .prose-sew table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  .prose-sew th, .prose-sew td { border-bottom: 1px solid var(--color-line); padding: 0.6em 0.5em; text-align: left; vertical-align: top; }
+  .prose-sew th { font-weight: 700; background: var(--color-linen); }
+  .prose-sew code { background: var(--color-linen); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+
+  /* Hand-drawn underline used in the hero */
+  .scribble {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 40 3, 70 11, 105 6 S 170 3, 198 7' fill='none' stroke='%23a63d29' stroke-width='2.6' stroke-linecap='round' stroke-dasharray='9 6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 0.45em;
+    background-position: 0 100%;
+    padding-bottom: 0.12em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
