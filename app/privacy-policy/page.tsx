@@ -9,7 +9,6 @@ export default function Privacy() {
   const s = siteConfig.name;
   return (
     <SimplePage title="Privacy policy" path="/privacy-policy/" updated="November 22, 2026" intro={`This policy explains what information ${s} (${siteConfig.url.replace("https://", "")}) collects when you visit, and what we do with it.`}>
-      <p><em>This template is a starting point, not legal advice. Review it (or have it reviewed) before relying on it, and update it whenever you add analytics, ads or a newsletter.</em></p>
       <h2>Information we collect</h2>
       <ul>
         <li><strong>Information you send us.</strong> If you email us, we receive your email address and whatever you choose to include.</li>

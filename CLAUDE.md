@@ -26,4 +26,6 @@ Articles are written by the ten-agent pipeline in `agents/` (01-scout → 10-pub
 - The page plan is `data/pages.json` (from the owner's content plan); the order is `data/schedule.json`.
 - Facts live in `product-master/` (append-only ledgers) and are compiled to `data/*.json` by `scripts/build_data.py`.
 - `scripts/audit.py` is the gate. Never weaken a check to make an article pass.
-- Indexing is switched off site-wide (`allowIndexing: false` in `site.config.ts`). Only the owner switches it on.
+- Indexing is switched off site-wide (`allowIndexing: false` in `site.config.ts`) until the first real article is
+  live; then `scripts/maybe_enable_indexing.py` (run by the workflow, at the owner's request) switches it on once.
+  Agents never edit `site.config.ts`.

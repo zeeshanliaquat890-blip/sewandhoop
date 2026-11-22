@@ -58,7 +58,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: npm ci --no-audit --no-fund
+        run: |
+          npm ci --no-audit --no-fund
+          sudo apt-get install -y -qq poppler-utils >/dev/null   # pdftotext, for manufacturer manuals
 
       - name: Pick the page
         id: pick
@@ -113,7 +115,11 @@ jobs:
                Fix what it reports; never weaken a check. Up to three repair cycles, then leave it at status: draft
                with the reasons in `work/<page>/07-quality-report.md`.
             6. `python scripts/build_data.py`, then `npm run build`. Do not commit a build that fails.
-            7. Commit with the message `Article: <PageID> <title> (<status>)`. Do not push -- the workflow pushes.
+            7. Commit with the message `Article: <PageID> <title> (<status>)` where status is ready, draft or
+               hold-sources. Do not push -- the workflow pushes.
+            8. Blocked sources are NOT a reason to stop: follow the "Source fallbacks" in the agent files. Stop
+               with hold-sources only if fewer than 4 products (buying guides) or the reviewed product itself
+               (reviews) cannot be verified after every fallback.
 
             Hard rules:
             - USA, Amazon.com, American English, US-dollar price bands only. Never an exact live-looking price.
@@ -124,7 +130,9 @@ jobs:
             - If a fact cannot be verified from a primary source, leave it out and say so in the quality report.
               An article missing a specification beats one that invents it.
             - Never change `site.config.ts` (the Amazon tag and the indexing switch belong to the owner).
+          # Model: set the repository variable CLAUDE_MODEL to pin a specific model; default is the Opus alias.
           claude_args: |
+            --model ${{ vars.CLAUDE_MODEL || 'opus' }}
             --max-turns 300
             --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite
 
@@ -144,6 +152,7 @@ jobs:
           git remote set-url origin "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git fetch -q origin main
           python scripts/stamp_publish_date.py --since origin/main
+          python scripts/maybe_enable_indexing.py
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "${{ steps.pick.outputs.page }}: finish the run"

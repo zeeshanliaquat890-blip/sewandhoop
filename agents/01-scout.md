@@ -20,10 +20,22 @@
   specification. State the exact variant.
 - Competitors are read to find **gaps only**. Never copy or closely paraphrase their wording, structure,
   tables or headings.
-- Amazon blocks automated browsing. Do not bypass a block or a CAPTCHA. If a page will not load, record it and
-  move on. Owner experience comes from Reddit (r/sewing, r/quilting, r/MachineEmbroidery, brand subs),
-  PatternReview.com, manufacturer forums, long-term YouTube reviews and US retailer Q&A -- never from scraping
-  Amazon at volume.
+- Respect every site's access rules. Never bypass a block, a CAPTCHA, a login or a paywall, and never disguise
+  the client (no fake browser user-agents) to get past a 403. A blocked page is not a reason to stop the article:
+  use the **source fallbacks** below, record what was blocked, and move on.
+- Amazon blocks automated browsing; never scrape Amazon at volume.
+
+### Source fallbacks (when a page will not load)
+1. HTTP 429 (rate limited): wait as long as the site's Retry-After asks (or 60 seconds), retry at most twice.
+2. 404 or wrong page: find the real URL with WebSearch (`site:singer.com 4423`, `site:janome.com "memory craft"`)
+   instead of guessing.
+3. Manufacturer page blocked (403) -> the **official manual, quick-start guide or brochure PDF** for the exact model,
+   wherever the manufacturer publishes it (download with `curl -sL -o m.pdf <url>`, read with `pdftotext m.pdf -`).
+4. Still nothing -> **two independent authorized US dealer listings that agree** on the value (e.g. Sewing Machines
+   Plus, AllBrands, Ken's Sewing Center, brand-authorized local dealers) -> status
+   `Verified -- two secondary sources`.
+5. A value that appears only in search snippets, a single seller listing or competitor editorial is not verified --
+   leave that one value out; never stop the whole article for one missing figure.
 - Prices: **US dollar bands only** ("around $250", "under $500", "$200–$300"). Never a live-looking exact
   figure, list price, saving or discount. Never invent a price.
 - Never quote a customer review, reproduce a star rating, review count, reviewer name or image.
@@ -70,7 +82,9 @@ Per page, in `work/{PageID}-{slug}/`:
    15 / ease of use 15 / build and reliability 10 / US value for money 10 / US warranty, service and dealer
    support 10 / current US availability 5). Assign a **distinct buyer role** to each selected product for buying
    guides (e.g. "Best overall", "Best under $200", "Best for heavy fabric"). Cut any product that cannot earn a
-   role no other product holds. Typical buying guide: 5-8 products.
+   role no other product holds. Typical buying guide: 5-8 products; **4 verified products are enough to publish**.
+   If fewer than 4 can be verified after the source fallbacks, write `SERP decision: Hold -- sources` with what
+   was blocked, so the next run resumes from the ledger.
 6. Commercial factors are **tiebreakers between near-equals only**. Record any tiebreak used. Never rank a
    weaker product higher for commission; never omit a clearly better product because it pays less.
 

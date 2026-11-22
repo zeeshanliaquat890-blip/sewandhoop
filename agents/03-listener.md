@@ -20,10 +20,22 @@
   specification. State the exact variant.
 - Competitors are read to find **gaps only**. Never copy or closely paraphrase their wording, structure,
   tables or headings.
-- Amazon blocks automated browsing. Do not bypass a block or a CAPTCHA. If a page will not load, record it and
-  move on. Owner experience comes from Reddit (r/sewing, r/quilting, r/MachineEmbroidery, brand subs),
-  PatternReview.com, manufacturer forums, long-term YouTube reviews and US retailer Q&A -- never from scraping
-  Amazon at volume.
+- Respect every site's access rules. Never bypass a block, a CAPTCHA, a login or a paywall, and never disguise
+  the client (no fake browser user-agents) to get past a 403. A blocked page is not a reason to stop the article:
+  use the **source fallbacks** below, record what was blocked, and move on.
+- Amazon blocks automated browsing; never scrape Amazon at volume.
+
+### Source fallbacks (when a page will not load)
+1. HTTP 429 (rate limited): wait as long as the site's Retry-After asks (or 60 seconds), retry at most twice.
+2. 404 or wrong page: find the real URL with WebSearch (`site:singer.com 4423`, `site:janome.com "memory craft"`)
+   instead of guessing.
+3. Manufacturer page blocked (403) -> the **official manual, quick-start guide or brochure PDF** for the exact model,
+   wherever the manufacturer publishes it (download with `curl -sL -o m.pdf <url>`, read with `pdftotext m.pdf -`).
+4. Still nothing -> **two independent authorized US dealer listings that agree** on the value (e.g. Sewing Machines
+   Plus, AllBrands, Ken's Sewing Center, brand-authorized local dealers) -> status
+   `Verified -- two secondary sources`.
+5. A value that appears only in search snippets, a single seller listing or competitor editorial is not verified --
+   leave that one value out; never stop the whole article for one missing figure.
 - Prices: **US dollar bands only** ("around $250", "under $500", "$200–$300"). Never a live-looking exact
   figure, list price, saving or discount. Never invent a price.
 - Never quote a customer review, reproduce a star rating, review count, reviewer name or image.
@@ -52,10 +64,21 @@ Per page, in `work/{PageID}-{slug}/`:
 Selected products from `02-research.md`; `product-master/review-insights.csv`.
 
 ## JOB
-Find **recurring patterns** in what owners report about each selected product. Sources, in order of
-usefulness: Reddit (r/sewing, r/quilting, r/MachineEmbroidery, r/sewhelp, brand subs), PatternReview.com,
-manufacturer forums and support pages, comment threads under long-term YouTube reviews, US retailer Q&A.
+Find **recurring patterns** in what owners report about each selected product. Try these sources in order; if one
+is blocked, record it and go to the next (never disguise the client to get past a block):
+1. Reddit's public JSON endpoints, identifying ourselves honestly and at a gentle pace (one request every few
+   seconds), e.g. `curl -sL -A "sewandhoop-research/1.0 (+https://sewandhoop.com/about/)"
+   "https://www.reddit.com/r/sewing/search.json?q=singer%204423&restrict_sr=1&limit=25"` (also r/quilting,
+   r/MachineEmbroidery, r/sewhelp). If Reddit refuses, move on.
+2. WebSearch with `site:reddit.com`, `site:quiltingboard.com`, `site:patternreview.com`, `"<model>" problems` --
+   **search snippets count only when the same pattern appears in at least three different threads or pages**;
+   record every URL.
+3. Customer Q&A and review summaries on the manufacturer's own US site, Walmart, Target or dealer pages (patterns
+   only, no quotes, no counts).
+4. Long-term YouTube review descriptions reachable without login.
 Read Amazon.com review pages only if they load without a block, and only a few -- never at volume.
+If a product ends up with fewer than two recurring patterns, that is fine: the article says less about owner
+experience for it and it gets no Sew Score. Never stop the article for this.
 
 For every pattern, append a row to `review-insights.csv`: Insight ID (`R0001`... sequential), Product ID,
 Theme (tension, feeding thick fabric, thread nesting, bobbin, noise, learning curve, embroidery software,

@@ -18,6 +18,8 @@ export const siteConfig = {
    * Set to true when the site is ready to launch, then push.
    */
   allowIndexing: false,
+  /** Owner's request: switch indexing on automatically when the first real article goes live (one time only). */
+  autoEnableIndexingAfterFirstArticle: true,
   language: "en-US",
 
   amazon: {

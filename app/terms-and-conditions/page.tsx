@@ -9,7 +9,6 @@ export default function Terms() {
   const s = siteConfig.name;
   return (
     <SimplePage title="Terms & conditions" path="/terms-and-conditions/" updated="November 22, 2026" intro={`By using ${s} you agree to these terms. Please read them — they're short.`}>
-      <p><em>This template is a starting point, not legal advice.</em></p>
       <h2>Information only</h2>
       <p>Content on {s} is for general information. We work hard to keep it accurate, but machines, prices and specifications change. Always check the manufacturer&apos;s manual and the retailer before buying or repairing equipment.</p>
       <h2>Safety</h2>

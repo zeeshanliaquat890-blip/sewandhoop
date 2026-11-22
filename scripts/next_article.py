@@ -18,6 +18,7 @@ import argparse
 import io
 import os
 import re
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -36,6 +37,15 @@ def finished(page) -> bool:
     return status == "ready" and len(body) > 1500
 
 
+def failed_attempts(pid: str) -> int:
+    """Run commits for this page that ended in (draft) or (hold-sources)."""
+    try:
+        out = subprocess.run(["git", "log", "--format=%s", "HEAD"], capture_output=True, text=True, cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))).stdout
+    except Exception:
+        return 0
+    return sum(1 for line in out.splitlines() if line.startswith(f"Article: {pid} ") and line.rstrip().endswith(("(draft)", "(hold-sources)")))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--id", action="store_true")
@@ -45,6 +55,9 @@ def main():
     by_id = {p["pageId"]: p for p in pages()}
     order = load("schedule.json").get("order", [])
     queue = [by_id[pid] for pid in order if pid in by_id and not finished(by_id[pid])]
+    # A page that has already failed twice (e.g. its sources were blocked) goes to the back of the queue, so one
+    # stubborn page can't stop the daily article. It is retried after everything else.
+    queue.sort(key=lambda p: failed_attempts(p["pageId"]) >= 2)
     if not queue:
         if not a.id:
             print("Queue is clear — every planned article is written.")
