@@ -98,9 +98,11 @@ AGENTS["01-scout"] = ("Scout -- SERP gap analysis and product discovery", """## 
    15 / ease of use 15 / build and reliability 10 / US value for money 10 / US warranty, service and dealer
    support 10 / current US availability 5). Assign a **distinct buyer role** to each selected product for buying
    guides (e.g. "Best overall", "Best under $200", "Best for heavy fabric"). Cut any product that cannot earn a
-   role no other product holds. Typical buying guide: 5-8 products; **4 verified products are enough to publish**.
-   If fewer than 4 can be verified after the source fallbacks, write `SERP decision: Hold -- sources` with what
-   was blocked, so the next run resumes from the ledger.
+   role no other product holds. **A buying guide must feature at least 10 verified products** (the owner's rule).
+   Start with a candidate list of 14-16 so that blocked or unverifiable machines can be dropped. Look across the
+   main US brands: Brother, Singer, Janome, Juki, Baby Lock, Bernette, Bernina, Husqvarna Viking, Pfaff, Elna,
+   Necchi -- current models only. If fewer than 10 can be verified after the source fallbacks, write
+   `SERP decision: Hold -- sources` with what was blocked, so the next run resumes from the ledger.
 6. Commercial factors are **tiebreakers between near-equals only**. Record any tiebreak used. Never rank a
    weaker product higher for commission; never omit a clearly better product because it pays less.
 
@@ -125,7 +127,9 @@ AGENTS["02-verifier"] = ("Verifier -- specifications, the claim ledger and the S
    max speed (spm), throat space, embroidery field, weight, needle threader, needle up/down, speed control, free
    arm, metal frame, included feet, US warranty, US support presence, price band (US dollars, from US
    retailers, as a band), Amazon.com ASIN if confirmed on the listing, Amazon search query, brand URL, best-for
-   labels, known issues, superseded-by, source URLs, `Last Verified` = today, `Verified By Page ID`,
+   labels, known issues, superseded-by, source URLs, `Brand URL` = the exact manufacturer US product page for this
+   variant (product photos are fetched from it automatically -- never paste image URLs yourself, never use Amazon
+   images), `Last Verified` = today, `Verified By Page ID`,
    `Verification Status`. New product: append a row. Existing stale row: re-verify only price band,
    availability, model status and warranty; add a correction note rather than overwriting.
    A value that conflicts between sources goes in as `Conflict: ...` (the site hides it).

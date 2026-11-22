@@ -82,9 +82,11 @@ Per page, in `work/{PageID}-{slug}/`:
    15 / ease of use 15 / build and reliability 10 / US value for money 10 / US warranty, service and dealer
    support 10 / current US availability 5). Assign a **distinct buyer role** to each selected product for buying
    guides (e.g. "Best overall", "Best under $200", "Best for heavy fabric"). Cut any product that cannot earn a
-   role no other product holds. Typical buying guide: 5-8 products; **4 verified products are enough to publish**.
-   If fewer than 4 can be verified after the source fallbacks, write `SERP decision: Hold -- sources` with what
-   was blocked, so the next run resumes from the ledger.
+   role no other product holds. **A buying guide must feature at least 10 verified products** (the owner's rule).
+   Start with a candidate list of 14-16 so that blocked or unverifiable machines can be dropped. Look across the
+   main US brands: Brother, Singer, Janome, Juki, Baby Lock, Bernette, Bernina, Husqvarna Viking, Pfaff, Elna,
+   Necchi -- current models only. If fewer than 10 can be verified after the source fallbacks, write
+   `SERP decision: Hold -- sources` with what was blocked, so the next run resumes from the ledger.
 6. Commercial factors are **tiebreakers between near-equals only**. Record any tiebreak used. Never rank a
    weaker product higher for commission; never omit a clearly better product because it pays less.
 

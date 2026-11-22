@@ -197,6 +197,8 @@ def run_checks(path):
     # 13 -- word count inside the plan's range
     wc = word_count(body)
     lo, hi = parse_range((plan or {}).get("wordRange") or fm_scalar(fm, "wordRange"))
+    if pack == "A" and hi is not None:
+        hi = max(hi, 5500)   # 10+ products need room; the plan's lower bound still applies
     add(13, "Word count inside target range", lo is None or lo <= wc <= hi, f"{wc} words, target {lo}–{hi}")
 
     # 14 -- required US sections (packs A, B, V)
@@ -239,6 +241,8 @@ def run_checks(path):
         extras.append(f"template should be {TEMPLATE[pack]} for {ctype}")
     if pack in ("A", "B") and not fm_ids:
         extras.append("no products in frontmatter")
+    if pack == "A" and len(set(fm_ids)) < 10:
+        extras.append(f"buying guides need at least 10 products (has {len(set(fm_ids))})")
     if pack in ("A", "B", "V") and "<Verdict" not in body_nc:
         extras.append("no <Verdict> block")
     if pack in ("B", "V") and not re.search(r"^verdict:", fm, re.M):

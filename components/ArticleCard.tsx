@@ -9,12 +9,13 @@ export function ArticleCard({ article, showSilo = true }: { article: Article; sh
   const silo = getSilo(article.silo);
   const t = article.fm.template;
   const n = article.fm.products?.length ?? 0;
+  const photo = article.fm.image ?? article.fm.products?.find((p) => p.image)?.image;
   return (
     <article className="card group relative flex h-full flex-col overflow-hidden transition-shadow hover:shadow-[0_14px_34px_-14px_rgba(30,26,23,.35)]">
       <div className={`relative grid aspect-[16/9] place-items-center overflow-hidden ${t === "informational" ? "bg-linen" : "bg-gradient-to-br from-cream to-linen-deep"}`}>
-        {article.fm.image ? (
+        {photo ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={article.fm.image} alt="" loading="lazy" className="h-full w-full object-cover" />
+          <img src={photo} alt="" loading="lazy" className={article.fm.image ? "h-full w-full object-cover" : "h-full w-full bg-white object-contain p-5 transition-transform group-hover:scale-105"} />
         ) : t === "informational" ? (
           silo && <SiloIcon name={silo.icon} size={84} className="text-ink/80 transition-transform group-hover:scale-105" />
         ) : (

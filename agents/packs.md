@@ -20,8 +20,9 @@ Reader's job: choose between several machines quickly and correctly. Be the deci
 12. Common mistakes / who should avoid this kind of machine
 13. FAQs (frontmatter `faq:`)  14. `<Verdict buyIf skipIf>` final recommendation
 15. How this article was researched
-Rules: every product needs a role no other holds; never open a product section by repeating its name as a
-sentence; rank by merit, document any commercial tiebreak in the report.
+Rules: **at least 10 products**, every one with a role no other holds (keep each product section tight, around
+200-300 words, so the page stays readable); never open a product section by repeating its name as a sentence;
+rank by merit, document any commercial tiebreak in the report.
 
 ## Pack B -- Product Review  (template: review, one product)
 Reader's job: decide whether to buy this machine. Give the ownership picture the product page won't.

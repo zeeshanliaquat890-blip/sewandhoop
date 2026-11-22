@@ -71,7 +71,9 @@ Per page, in `work/{PageID}-{slug}/`:
    max speed (spm), throat space, embroidery field, weight, needle threader, needle up/down, speed control, free
    arm, metal frame, included feet, US warranty, US support presence, price band (US dollars, from US
    retailers, as a band), Amazon.com ASIN if confirmed on the listing, Amazon search query, brand URL, best-for
-   labels, known issues, superseded-by, source URLs, `Last Verified` = today, `Verified By Page ID`,
+   labels, known issues, superseded-by, source URLs, `Brand URL` = the exact manufacturer US product page for this
+   variant (product photos are fetched from it automatically -- never paste image URLs yourself, never use Amazon
+   images), `Last Verified` = today, `Verified By Page ID`,
    `Verification Status`. New product: append a row. Existing stale row: re-verify only price band,
    availability, model status and warranty; add a correction note rather than overwriting.
    A value that conflicts between sources goes in as `Conflict: ...` (the site hides it).

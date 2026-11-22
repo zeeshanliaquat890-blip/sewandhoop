@@ -61,6 +61,7 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
           sudo apt-get install -y -qq poppler-utils >/dev/null   # pdftotext, for manufacturer manuals
+          python -m pip install --quiet pillow                    # product photos -> webp
 
       - name: Pick the page
         id: pick
@@ -115,11 +116,13 @@ jobs:
             5. `python scripts/audit.py content/articles/<slug>.mdx` must exit 0 before the article is marked ready.
                Fix what it reports; never weaken a check. Up to three repair cycles, then leave it at status: draft
                with the reasons in `work/<page>/07-quality-report.md`.
-            6. `python scripts/build_data.py`, then `npm run build`. Do not commit a build that fails.
+            6. Make sure every product row has `Brand URL` = the exact manufacturer US product page (product photos
+               are fetched from it automatically by the workflow). Then `python scripts/build_data.py` and
+               `npm run build`. Do not commit a build that fails.
             7. Commit with the message `Article: <PageID> <title> (<status>)` where status is ready, draft or
                hold-sources. Do not push -- the workflow pushes.
             8. Blocked sources are NOT a reason to stop: follow the "Source fallbacks" in the agent files. Stop
-               with hold-sources only if fewer than 4 products (buying guides) or the reviewed product itself
+               with hold-sources only if fewer than 10 products (buying guides) or the reviewed product itself
                (reviews) cannot be verified after every fallback.
 
             Hard rules:
@@ -156,6 +159,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git fetch -q origin main
+          # Product photos for any machine in the ledger that has none yet (manufacturer pages only).
+          python scripts/fetch_brand_images.py || true
+          python scripts/build_data.py
           python scripts/stamp_publish_date.py --since origin/main
           python scripts/maybe_enable_indexing.py
           git add -A
