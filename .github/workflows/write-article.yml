@@ -24,6 +24,11 @@ on:
   schedule:
     - cron: "30 23 * * *"   # 04:30 PKT fallback
     - cron: "45 1 * * *"    # 06:45 PKT fallback
+  # Lets Claude sessions (which can push but cannot press "Run workflow") start a run: commit a change to
+  # .github/run-now.txt. Optional first line = a page ID. Behaves like a manual run.
+  push:
+    branches: [main]
+    paths: [".github/run-now.txt"]
   workflow_dispatch:
     inputs:
       page_id:
@@ -72,6 +77,10 @@ jobs:
           if [ -n "${{ inputs.page_id }}" ]; then
             echo "page=${{ inputs.page_id }}" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          if [ "${{ github.event_name }}" = "push" ]; then
+            want="$(head -n1 .github/run-now.txt | tr -d '[:space:]')"
+            if echo "$want" | grep -qE '^S[0-9]+$'; then echo "page=$want" >> "$GITHUB_OUTPUT"; exit 0; fi
+          fi
           hour_pkt="$(TZ=Asia/Karachi date +%-H)"
           if [ "${{ github.event_name }}" = "schedule" ] && { [ "$hour_pkt" -lt "$WINDOW_FIRST_HOUR_PKT" ] || [ "$hour_pkt" -gt "$WINDOW_LAST_HOUR_PKT" ]; }; then
             echo "::warning::Fallback schedule fired at ${hour_pkt}:xx PKT, outside the 0${WINDOW_FIRST_HOUR_PKT}:00–0${WINDOW_LAST_HOUR_PKT}:59 window. Nothing written. If no article appeared today, check the cron-job.org trigger."
@@ -87,6 +96,7 @@ jobs:
           echo "page=$(python scripts/next_article.py --id)" >> "$GITHUB_OUTPUT"
 
       - name: Run the pipeline
+        id: pipeline
         if: steps.pick.outputs.page != ''
         uses: anthropics/claude-code-action@v1
         with:
@@ -143,6 +153,7 @@ jobs:
           git log origin/main..HEAD --oneline || true
 
       - name: Push the work
+        id: push
         if: always() && steps.pick.outputs.page != ''
         env:
           GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -176,3 +187,31 @@ jobs:
       - name: Report
         if: always()
         run: python scripts/status.py || true
+
+      # Leave a readable record of every run in the repo, so a Claude session (which cannot open the Actions
+      # tab) can see what happened and fix it.
+      - name: Record the run
+        if: always()
+        env:
+          GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p work/_runs
+          f="work/_runs/$(date -u +%Y-%m-%d_%H%M)-run${{ github.run_number }}.md"
+          {
+            echo "# Run ${{ github.run_number }} (${{ github.event_name }}) — $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo ""
+            echo "- Page: ${{ steps.pick.outputs.page || '(none picked)' }}"
+            echo "- Pick step: ${{ steps.pick.outcome }}"
+            echo "- Pipeline step: ${{ steps.pipeline.outcome || 'skipped' }}"
+            echo "- Push step: ${{ steps.push.outcome || 'skipped' }}"
+            echo "- Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo ""
+            echo "## Last commits"
+            git log -5 --format='- %h %s' origin/main 2>/dev/null || true
+          } > "$f"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add "$f" && git commit -q -m "Run log ${{ github.run_number }}: ${{ steps.pick.outputs.page || 'nothing' }} ${{ steps.pipeline.outcome || 'skipped' }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && break; sleep 5; done
+
