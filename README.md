@@ -56,7 +56,8 @@ products:                    # roundup + review only
     image: "/images/model-a.jpg"   # optional
     badge: "Best overall"    # products with a badge appear in Quick Picks (max 4)
     bestFor: "Beginners who want room to grow"
-    rating: 4.7
+    score: 94                # Sew Score 0–100 (shown as a ring)
+    scores: { "Stitch quality": 95, "Ease of use": 96, "Build & reliability": 90, "Features for the price": 94, "Owner satisfaction": 92 }
     priceRange: "$200–$300"  # never a live price (Amazon policy)
     summary: "Short summary."
     specs: { "Stitches": "60", "Weight": "13 lb" }   # first 4 keys become comparison table columns
@@ -102,6 +103,8 @@ faq:                         # any template — also creates FAQPage schema
 6. **Run `npm run dev`** and check the page, then commit and push. Vercel rebuilds automatically.
 
 ### What happens automatically
+
+- The sticky **On this page** sidebar (desktop) and section bar (mobile) are built from your `##`/`###` headings, product boxes and FAQ.
 
 - Affiliate disclosure line on top of every page with affiliate links
 - `rel="sponsored nofollow"` + `target="_blank"` + the tag on every Amazon link

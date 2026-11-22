@@ -2,168 +2,134 @@
 
 /* ----------------------------------------------------------------
    Sew & Hoop — design tokens
-   Warm paper, ink-brown text, ONE accent: madder red (thread red).
+   White reading surfaces, warm linen sections, deep ink chrome,
+   ONE accent: madder red (thread red).
 ------------------------------------------------------------------ */
 @theme {
-  --color-paper: #fbf7f0;
-  --color-linen: #f3ece1;
-  --color-linen-deep: #e9dfcf;
-  --color-line: #ddd2c1;
-  --color-ink: #26221e;
-  --color-ink-soft: #57504a;
-  --color-ink-mute: #6f675f;
-  --color-madder: #a63d29;
-  --color-madder-deep: #86301f;
-  --color-madder-tint: #f6e4dc;
+  --color-paper: #ffffff;
+  --color-cream: #fbf8f3;
+  --color-linen: #f4eee5;
+  --color-linen-deep: #e8dfd1;
+  --color-line: #e3dacc;
+  --color-ink: #1e1a17;
+  --color-ink-2: #2c2622;
+  --color-ink-soft: #4f4842;
+  --color-ink-mute: #6c645c;
+  --color-madder: #b23a26;
+  --color-madder-deep: #8e2c1b;
+  --color-madder-tint: #fbebe5;
+  --color-sage: #3f6b45;
+  --color-sage-tint: #ecf3ea;
+  --color-gold: #c58b2a;
 
-  --font-serif: var(--font-young-serif), "Georgia", "Times New Roman", serif;
+  --font-serif: var(--font-source-serif), "Georgia", serif;
   --font-sans: var(--font-figtree), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-cond: var(--font-barlow), "Arial Narrow", sans-serif;
 
-  --container-prose: 46rem; /* 736px reading column */
-  --container-site: 76rem;
+  --container-prose: 47.5rem; /* 760px reading column */
+  --container-site: 82rem;
+  --breakpoint-3xl: 1720px;
 }
 
 @layer base {
-  html {
-    -webkit-text-size-adjust: 100%;
-    scroll-padding-top: 5.5rem;
-  }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 6rem; scroll-behavior: smooth; }
   body {
     @apply bg-paper text-ink font-sans antialiased;
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.7;
+    font-size: 1.125rem;
+    line-height: 1.72;
   }
-  @media (min-width: 768px) {
-    body { font-size: 1.1875rem; } /* 19px */
-  }
+  @media (min-width: 768px) { body { font-size: 1.1875rem; } }
   h1, h2, h3, h4 {
     @apply font-serif text-ink;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.015em;
     text-wrap: balance;
   }
   a { @apply text-madder underline decoration-1 underline-offset-[0.2em]; }
   a:hover { @apply text-madder-deep decoration-2; }
   ::selection { background: var(--color-madder-tint); }
-  :focus-visible { outline: 3px solid var(--color-madder); outline-offset: 3px; border-radius: 2px; }
+  :focus-visible { outline: 3px solid var(--color-madder); outline-offset: 3px; border-radius: 3px; }
   img { max-width: 100%; height: auto; }
 }
 
 @layer components {
-  /* Running stitch rule — the signature divider */
-  .stitch-rule {
-    height: 2px;
-    border: 0;
-    background: repeating-linear-gradient(90deg, var(--color-madder) 0 10px, transparent 10px 17px);
-    opacity: 0.85;
-  }
-  .stitch-rule-ink {
-    height: 2px;
-    border: 0;
-    background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px);
-  }
+  .stitch-rule { height: 2px; border: 0; background: repeating-linear-gradient(90deg, var(--color-madder) 0 10px, transparent 10px 17px); }
+  .stitch-rule-ink { height: 2px; border: 0; background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px); }
+  .stitch-edge { background-image: repeating-linear-gradient(90deg, var(--color-madder) 0 12px, transparent 12px 20px); background-size: 100% 3px; background-repeat: no-repeat; }
 
-  /* Sewn patch: linen fill with a stitched outline inset from the edge */
-  .patch {
-    background: var(--color-linen);
-    border-radius: 10px;
-    outline: 2px dashed color-mix(in srgb, var(--color-ink) 28%, transparent);
-    outline-offset: -9px;
-  }
-  .patch-madder {
-    outline-color: color-mix(in srgb, var(--color-madder) 60%, transparent);
-  }
+  .patch { background: var(--color-linen); border-radius: 14px; outline: 2px dashed color-mix(in srgb, var(--color-ink) 22%, transparent); outline-offset: -9px; }
 
-  /* Woven garment label */
-  .woven-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    background: var(--color-madder);
-    color: #fff;
-    font-family: var(--font-sans);
-    font-weight: 700;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 0.35em 1.1em;
-    clip-path: polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%, 7px 50%);
+  /* Ribbon label (award style) */
+  .ribbon {
+    display: inline-flex; align-items: center; gap: 0.4em;
+    background: var(--color-madder); color: #fff;
+    font-family: var(--font-cond); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.28em 1.1em 0.28em 0.8em; line-height: 1.2;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 9px) 50%, 100% 100%, 0 100%);
   }
-  .woven-label-ink { background: var(--color-ink); }
+  .ribbon-ink { background: var(--color-ink); }
+  .ribbon-gold { background: var(--color-gold); }
 
-  /* Eyebrow / kicker text */
-  .kicker {
-    font-family: var(--font-sans);
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--color-madder);
-  }
+  .kicker { font-family: var(--font-cond); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-madder); }
+  .label-cond { font-family: var(--font-cond); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 
-  /* Primary button (affiliate CTA) */
   .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    min-height: 3rem;
-    padding: 0.7rem 1.4rem;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.2;
-    text-decoration: none;
-    transition: background-color 0.15s ease;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    min-height: 3rem; padding: 0.7rem 1.4rem; border-radius: 8px;
+    font-weight: 700; font-size: 1rem; line-height: 1.2; text-decoration: none;
+    transition: background-color .15s ease, transform .15s ease;
   }
-  .btn-primary { background: var(--color-madder); color: #fff; }
+  .btn-primary { background: var(--color-madder); color: #fff; box-shadow: 0 2px 0 var(--color-madder-deep); }
   .btn-primary:hover { background: var(--color-madder-deep); color: #fff; }
+  .btn-amazon { background: #ffd814; color: #1e1a17; box-shadow: 0 2px 0 #e0b800; }
+  .btn-amazon:hover { background: #f7ca00; color: #1e1a17; }
   .btn-ghost { background: transparent; color: var(--color-ink); box-shadow: inset 0 0 0 2px var(--color-ink); }
-  .btn-ghost:hover { background: var(--color-ink); color: var(--color-paper); }
+  .btn-ghost:hover { background: var(--color-ink); color: #fff; }
+  .btn-light { background: #fff; color: var(--color-ink); }
+  .btn-light:hover { background: var(--color-linen); color: var(--color-ink); }
 
-  /* Long-form article typography */
+  .card { background: #fff; border: 1px solid var(--color-line); border-radius: 14px; box-shadow: 0 1px 2px rgba(30,26,23,.04), 0 8px 24px -12px rgba(30,26,23,.12); }
+
+  /* Long-form article typography (scoped: stops at any .not-prose component, resumes inside a nested .prose-sew) */
   .prose-sew { color: var(--color-ink); }
-  .prose-sew > * + * { margin-top: 1.15em; }
-  .prose-sew h2 { font-size: 1.85rem; margin-top: 2.2em; margin-bottom: 0.2em; }
-  .prose-sew h3 { font-size: 1.4rem; margin-top: 1.8em; }
-  .prose-sew h2 + *, .prose-sew h3 + * { margin-top: 0.6em; }
-  .prose-sew ul { list-style: none; padding-left: 0; }
-  .prose-sew ul > li { position: relative; padding-left: 1.6em; margin-top: 0.45em; }
-  .prose-sew ul > li::before {
-    content: "";
-    position: absolute;
-    left: 0.25em;
-    top: 0.72em;
-    width: 0.8em;
-    height: 2px;
-    background: repeating-linear-gradient(90deg, var(--color-madder) 0 4px, transparent 4px 6px);
-  }
-  .prose-sew ol { list-style: decimal; padding-left: 1.4em; }
-  .prose-sew ol > li { margin-top: 0.45em; padding-left: 0.3em; }
-  .prose-sew ol > li::marker { color: var(--color-madder); font-weight: 700; }
-  .prose-sew blockquote {
-    border-left: 3px solid var(--color-madder);
-    padding: 0.2em 0 0.2em 1.1em;
-    font-family: var(--font-serif);
-    font-size: 1.25em;
-    line-height: 1.45;
-    color: var(--color-ink-soft);
-  }
-  .prose-sew strong { font-weight: 700; }
-  .prose-sew hr { height: 2px; border: 0; margin: 2.5rem 0; background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px); }
-  .prose-sew table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
-  .prose-sew th, .prose-sew td { border-bottom: 1px solid var(--color-line); padding: 0.6em 0.5em; text-align: left; vertical-align: top; }
-  .prose-sew th { font-weight: 700; background: var(--color-linen); }
-  .prose-sew code { background: var(--color-linen); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+}
 
-  /* Hand-drawn underline used in the hero */
+@layer components {
+@scope (.prose-sew) to (.not-prose) {
+  :scope > * + * { margin-top: 1.15em; }
+  h2 { font-size: 1.95rem; margin-top: 2.3em; padding-top: 0.9em; border-top: 1px solid var(--color-line); }
+  :scope > h2:first-child { margin-top: 0.5em; }
+  h3 { font-size: 1.42rem; margin-top: 1.8em; }
+  h2 + *, h3 + * { margin-top: 0.6em; }
+  ul { list-style: none; padding-left: 0; }
+  ul > li { position: relative; padding-left: 1.6em; margin-top: 0.45em; }
+  ul > li::before { content: ""; position: absolute; left: 0.25em; top: 0.72em; width: 0.8em; height: 2px; background: repeating-linear-gradient(90deg, var(--color-madder) 0 4px, transparent 4px 6px); }
+  ol { list-style: decimal; padding-left: 1.4em; }
+  ol > li { margin-top: 0.45em; padding-left: 0.3em; }
+  ol > li::marker { color: var(--color-madder); font-weight: 700; }
+  blockquote { border-left: 4px solid var(--color-madder); background: var(--color-cream); padding: 1em 1.2em; font-family: var(--font-serif); font-size: 1.2em; line-height: 1.45; color: var(--color-ink-soft); border-radius: 0 10px 10px 0; }
+  strong { font-weight: 700; }
+  hr { height: 2px; border: 0; margin: 2.5rem 0; background: repeating-linear-gradient(90deg, var(--color-line) 0 10px, transparent 10px 17px); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  th, td { border-bottom: 1px solid var(--color-line); padding: 0.65em 0.6em; text-align: left; vertical-align: top; }
+  th { font-weight: 700; background: var(--color-linen); }
+  code { background: var(--color-linen); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+}
+}
+
+@layer components {
   .scribble {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 40 3, 70 11, 105 6 S 170 3, 198 7' fill='none' stroke='%23a63d29' stroke-width='2.6' stroke-linecap='round' stroke-dasharray='9 6'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: 100% 0.45em;
-    background-position: 0 100%;
-    padding-bottom: 0.12em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 40 3, 70 11, 105 6 S 170 3, 198 7' fill='none' stroke='%23e9735c' stroke-width='3' stroke-linecap='round' stroke-dasharray='9 6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-size: 100% 0.42em; background-position: 0 100%; padding-bottom: 0.1em;
+  }
+
+  /* Fabric weave texture for dark bands */
+  .weave {
+    background-color: var(--color-ink);
+    background-image:
+      repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 2px, transparent 2px 7px),
+      repeating-linear-gradient(-45deg, rgba(255,255,255,.025) 0 2px, transparent 2px 7px);
   }
 }
 

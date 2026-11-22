@@ -4,11 +4,18 @@ import { LogoMark } from "./Logo";
 
 export function AuthorBox() {
   return (
-    <aside className="not-prose my-12 flex gap-4 rounded-xl border border-line p-5">
-      <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-linen"><LogoMark size={38} /></span>
-      <div>
-        <p className="font-bold">Written by <Link href={siteConfig.author.url}>{siteConfig.author.name}</Link></p>
-        <p className="mt-1 text-[1rem] leading-relaxed text-ink-soft">{siteConfig.author.bio}</p>
+    <aside className="not-prose card my-14 overflow-hidden">
+      <div className="flex flex-col gap-5 p-6 sm:flex-row">
+        <span className="grid h-20 w-20 shrink-0 place-items-center rounded-full border-2 border-dashed border-madder/50 bg-cream"><LogoMark size={52} /></span>
+        <div>
+          <p className="label-cond text-[0.85rem] text-madder">About the author</p>
+          <p className="mt-0.5 font-serif text-[1.3rem] font-bold"><Link href={siteConfig.author.url} className="text-ink no-underline hover:text-madder">{siteConfig.author.name}</Link></p>
+          <p className="mt-2 text-[1rem] leading-relaxed text-ink-soft">{siteConfig.author.bio}</p>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-line bg-cream px-6 py-3 text-[0.92rem]">
+        <Link href="/how-we-test/" className="font-bold no-underline">How we test machines →</Link>
+        <Link href="/affiliate-disclosure/" className="font-bold no-underline">How we make money →</Link>
       </div>
     </aside>
   );

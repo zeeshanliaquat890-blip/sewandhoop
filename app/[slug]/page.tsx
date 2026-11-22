@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { siteConfig } from "@/site.config";
-import { getAllArticles, getArticle, getArticlesForSilo, getHubContent, getSilo } from "@/lib/content";
+import { getAllArticles, getArticle, getArticlesForSilo, getHubContent, getSilo, extractHeadings } from "@/lib/content";
 import { getPlannedForSilo } from "@/lib/urlmap";
 import { renderMdx } from "@/lib/mdx";
 import { pageMetadata, articleLd, breadcrumbLd, faqLd, itemListLd, productReviewLd } from "@/lib/seo";
@@ -56,7 +56,7 @@ export default async function Page({ params }: Props) {
             ...(articles.length ? [itemListLd(url, articles.map((a) => ({ name: a.fm.title, id: a.slug })))] : []),
           ]}
         />
-        <HubTemplate silo={silo} articles={articles} plannedCount={getPlannedForSilo(slug).length} content={content} />
+        <HubTemplate silo={silo} articles={articles} plannedCount={getPlannedForSilo(slug).length} content={content} contentHeadings={hub ? extractHeadings(hub.body) : []} />
       </>
     );
   }
@@ -76,7 +76,7 @@ export default async function Page({ params }: Props) {
   if (fm.template === "review" && fm.verdict) {
     const main = fm.products?.find((p) => p.id === fm.verdict?.productId) ?? fm.products?.[0];
     if (main && (fm.products?.length ?? 0) === 1) {
-      ld.push(productReviewLd({ name: main.name, image: main.image, rating: fm.verdict.rating, summary: fm.verdict.summary, url: article.url, published: fm.published }));
+      ld.push(productReviewLd({ name: main.name, image: main.image, rating: fm.verdict.rating ?? (main.score ? Math.round(main.score / 2) / 10 : undefined), summary: fm.verdict.summary, url: article.url, published: fm.published }));
     }
   }
 

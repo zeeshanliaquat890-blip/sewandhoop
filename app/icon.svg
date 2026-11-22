@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <rect width="48" height="48" rx="11" fill="#fbf7f0"/>
-  <path d="M20.6 9.6V6.9c0-.9.7-1.6 1.6-1.6h3.6c.9 0 1.6.7 1.6 1.6v2.7" stroke="#26221e" stroke-width="2.4" stroke-linejoin="round"/>
-  <path d="M24 9.4c9.6-.1 17.2 7.4 17.1 16.8-.1 9.3-7.8 16.6-17.3 16.5C14.5 42.6 7 35.2 7 26c.1-9.2 7.5-16.5 17-16.6Z" stroke="#26221e" stroke-width="3"/>
-  <path d="M13.6 30.5c3.2-2.7 6.4-3.6 9.7-2.3 3.5 1.4 6.4.7 9.6-2.4" stroke="#a63d29" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="3.8 3.2"/>
-  <path d="M17.2 37.6 38.6 13" stroke="#26221e" stroke-width="2.4" stroke-linecap="round"/>
+  <rect width="48" height="48" rx="11" fill="#fbf8f3"/>
+  <path d="M20.6 9.6V6.9c0-.9.7-1.6 1.6-1.6h3.6c.9 0 1.6.7 1.6 1.6v2.7" stroke="#1e1a17" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M24 9.4c9.6-.1 17.2 7.4 17.1 16.8-.1 9.3-7.8 16.6-17.3 16.5C14.5 42.6 7 35.2 7 26c.1-9.2 7.5-16.5 17-16.6Z" stroke="#1e1a17" stroke-width="3"/>
+  <path d="M13.6 30.5c3.2-2.7 6.4-3.6 9.7-2.3 3.5 1.4 6.4.7 9.6-2.4" stroke="#b23a26" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="3.8 3.2"/>
+  <path d="M17.2 37.6 38.6 13" stroke="#1e1a17" stroke-width="2.4" stroke-linecap="round"/>
 </svg>

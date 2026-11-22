@@ -9,8 +9,8 @@ type Props = {
   /** A full amazon.com URL — the tag is added automatically */
   href?: string;
   children?: ReactNode;
-  /** "button" = red pill, "text" = inline link */
-  variant?: "button" | "text";
+  /** "button" = red button, "amazon" = yellow Amazon-style button, "text" = inline link */
+  variant?: "button" | "amazon" | "text";
   className?: string;
   /** Free label for click tracking, e.g. "quickpick-best-overall" */
   track?: string;
@@ -32,10 +32,10 @@ export function AffiliateLink({ asin, query, href, children, variant = "text", c
       data-aff="amazon"
       data-aff-asin={asin || undefined}
       data-aff-track={track || undefined}
-      className={variant === "button" ? `btn btn-primary ${className}` : className}
+      className={variant === "button" ? `btn btn-primary ${className}` : variant === "amazon" ? `btn btn-amazon ${className}` : className}
     >
       {label}
-      {variant === "button" && <IconExternal />}
+      {variant !== "text" && <IconExternal />}
     </a>
   );
 }

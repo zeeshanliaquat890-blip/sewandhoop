@@ -16,7 +16,11 @@ export type Product = {
   image?: string;
   badge?: string; // "Best overall"
   bestFor?: string;
-  rating?: number; // out of 5 (your editorial score)
+  rating?: number; // out of 5 — optional, derived from `score` if missing
+  /** Sew Score 0–100 (overall) */
+  score?: number;
+  /** Sub-scores 0–100, e.g. { "Stitch quality": 92, "Ease of use": 88 } */
+  scores?: Record<string, number>;
   priceRange?: string; // "$$" or "Under $200" — never a live price
   specs?: Record<string, string | number>;
   pros?: string[];
@@ -65,19 +69,32 @@ const HUBS_DIR = path.join(process.cwd(), "content", "hubs");
 
 let cache: Article[] | null = null;
 
-function extractHeadings(body: string): Heading[] {
+export function extractHeadings(body: string, fm: Partial<ArticleFrontmatter> = {}): Heading[] {
   const slugger = new GithubSlugger();
   const out: Heading[] = [];
+  const products = fm.products ?? [];
+  // Sections the templates add around the body
+  if (fm.template === "roundup" && products.some((p) => p.badge)) out.push({ depth: 2, text: "Our top picks", id: "quick-picks" });
+  if (products.length > 1) out.push({ depth: 2, text: "Comparison table", id: "comparison" });
+  if (fm.template === "review" && fm.verdict) out.unshift({ depth: 2, text: "Our verdict", id: "verdict" });
   let inCode = false;
   for (const line of body.split("\n")) {
     if (line.trim().startsWith("```")) inCode = !inCode;
     if (inCode) continue;
+    const pb = /<ProductBox\s+id="([^"]+)"/.exec(line);
+    if (pb) {
+      const prod = products.find((p) => p.id === pb[1]);
+      if (prod) out.push({ depth: 3, text: prod.name, id: `product-${prod.id}` });
+      continue;
+    }
     const m = /^(##|###)\s+(.+?)\s*#*\s*$/.exec(line);
     if (m) {
       const text = m[2].replace(/[*_`]/g, "").replace(/\[(.*?)\]\(.*?\)/g, "$1");
       out.push({ depth: m[1].length as 2 | 3, text, id: slugger.slug(text) });
     }
   }
+  if (fm.template === "review" && fm.alternatives?.length) out.push({ depth: 2, text: "Alternatives", id: "alternatives" });
+  if (fm.faq?.length) out.push({ depth: 2, text: "FAQ", id: "faq" });
   return out;
 }
 
@@ -105,7 +122,7 @@ export function getAllArticles(): Article[] {
       body: content,
       silo: map?.hub || "sewing-machines",
       map,
-      headings: extractHeadings(content),
+      headings: extractHeadings(content, fm),
       hasAffiliateLinks:
         fm.template !== "informational" ||
         Boolean(fm.products?.length) ||

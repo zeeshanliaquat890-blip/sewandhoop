@@ -15,7 +15,7 @@ const base = (size = 24) => ({
 
 /** Hand-drawn style category icons. Accent strokes use the madder colour. */
 export function SiloIcon({ name, size = 32, className = "" }: { name: SiloIconName; size?: number; className?: string }) {
-  const accent = "#a63d29";
+  const accent = "#b23a26";
   switch (name) {
     case "sewing":
       return (

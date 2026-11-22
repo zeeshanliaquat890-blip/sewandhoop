@@ -1,37 +1,31 @@
 import Link from "next/link";
 
 /** The mark: an embroidery hoop with a needle pushed through it and a running stitch of red thread. */
-export function LogoMark({ size = 40, className = "" }: { size?: number; className?: string }) {
+export function LogoMark({ size = 40, className = "", onDark = false }: { size?: number; className?: string; onDark?: boolean }) {
+  const ink = onDark ? "#fbf8f3" : "#1e1a17";
+  const fill = onDark ? "#2c2622" : "#fff";
   return (
     <svg width={size} height={size} viewBox="0 0 48 48" fill="none" aria-hidden="true" className={className}>
-      {/* hoop clasp */}
-      <path d="M20.6 9.6V6.9c0-.9.7-1.6 1.6-1.6h3.6c.9 0 1.6.7 1.6 1.6v2.7" stroke="#26221e" strokeWidth="2.2" strokeLinejoin="round" />
-      <path d="M24 5.3V2.8" stroke="#26221e" strokeWidth="2.2" strokeLinecap="round" />
-      {/* outer + inner hoop, very slightly off-round so it feels drawn */}
-      <path d="M24 9.4c9.6-.1 17.2 7.4 17.1 16.8-.1 9.3-7.8 16.6-17.3 16.5C14.5 42.6 7 35.2 7 26c.1-9.2 7.5-16.5 17-16.6Z" stroke="#26221e" strokeWidth="2.6" />
-      <path d="M24.1 13.1c7.4 0 13.3 5.8 13.2 13-.1 7.1-6 12.8-13.3 12.8-7.3-.1-13.2-5.8-13.1-12.9.1-7.2 5.9-12.9 13.2-12.9Z" stroke="#26221e" strokeWidth="1.2" opacity=".55" />
-      {/* running stitch across the fabric */}
-      <path d="M13.6 30.5c3.2-2.7 6.4-3.6 9.7-2.3 3.5 1.4 6.4.7 9.6-2.4" stroke="#a63d29" strokeWidth="2.4" strokeLinecap="round" strokeDasharray="3.6 3.2" />
-      {/* needle */}
-      <path d="M17.2 37.6 38.6 13" stroke="#26221e" strokeWidth="2" strokeLinecap="round" />
-      <ellipse cx="37.2" cy="14.7" rx="0.9" ry="2" transform="rotate(41 37.2 14.7)" fill="#fbf7f0" stroke="#26221e" strokeWidth="1.2" />
-      {/* loose thread tail from the eye */}
-      <path d="M37.6 14.3c3.6-1.6 6.6.4 5.9 3.5-.6 2.5-3.6 3.2-5.3 5.6" stroke="#a63d29" strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M20.6 9.6V6.9c0-.9.7-1.6 1.6-1.6h3.6c.9 0 1.6.7 1.6 1.6v2.7" stroke={ink} strokeWidth="2.4" strokeLinejoin="round" />
+      <path d="M24 5.3V2.8" stroke={ink} strokeWidth="2.4" strokeLinecap="round" />
+      <path d="M24 9.4c9.6-.1 17.2 7.4 17.1 16.8-.1 9.3-7.8 16.6-17.3 16.5C14.5 42.6 7 35.2 7 26c.1-9.2 7.5-16.5 17-16.6Z" fill={fill} stroke={ink} strokeWidth="3" />
+      <path d="M24.1 13.6c7.1 0 12.8 5.6 12.7 12.5-.1 6.8-5.8 12.3-12.8 12.3-7-.1-12.7-5.6-12.6-12.4.1-6.9 5.7-12.4 12.7-12.4Z" stroke={ink} strokeWidth="1.2" opacity=".45" />
+      <path d="M13.6 30.5c3.2-2.7 6.4-3.6 9.7-2.3 3.5 1.4 6.4.7 9.6-2.4" stroke="#d2482f" strokeWidth="2.6" strokeLinecap="round" strokeDasharray="3.6 3.2" />
+      <path d="M17.2 37.6 38.6 13" stroke={ink} strokeWidth="2.2" strokeLinecap="round" />
+      <path d="M37.6 14.3c3.6-1.6 6.6.4 5.9 3.5-.6 2.5-3.6 3.2-5.3 5.6" stroke="#d2482f" strokeWidth="1.9" strokeLinecap="round" />
     </svg>
   );
 }
 
-export function Logo({ compact = false }: { compact?: boolean }) {
+export function Logo({ onDark = false, size = "md" }: { onDark?: boolean; size?: "md" | "lg" }) {
   return (
-    <Link href="/" className="group flex items-center gap-2.5 no-underline text-ink hover:text-ink" aria-label="Sew & Hoop — home">
-      <LogoMark size={compact ? 34 : 42} />
+    <Link href="/" className={`group flex items-center gap-2.5 no-underline ${onDark ? "text-white hover:text-white" : "text-ink hover:text-ink"}`}>
+      <LogoMark size={size === "lg" ? 52 : 42} onDark={onDark} />
       <span className="flex flex-col leading-none">
-        <span className={`font-serif ${compact ? "text-[1.45rem]" : "text-[1.7rem]"} tracking-tight`}>
-          Sew <span className="text-madder italic" style={{ fontFamily: "Georgia, serif" }}>&amp;</span> Hoop
+        <span className={`font-serif font-bold tracking-tight ${size === "lg" ? "text-[1.9rem]" : "text-[1.6rem]"}`}>
+          Sew<span className="mx-[0.08em] text-[#d2482f]">&amp;</span>Hoop
         </span>
-        {!compact && (
-          <span className="mt-1 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-ink-mute">machine advice from people who sew</span>
-        )}
+        <span className={`label-cond mt-1 text-[0.72rem] tracking-[0.2em] ${onDark ? "text-white/60" : "text-ink-mute"}`}>Sewing machine reviews</span>
       </span>
     </Link>
   );

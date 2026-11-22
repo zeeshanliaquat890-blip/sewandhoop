@@ -17,6 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articles.map((a) => ({ url: absUrl(a.url), lastModified: new Date(a.fm.updated || a.fm.published), changeFrequency: "monthly" as const, priority: a.fm.template === "informational" ? 0.6 : 0.8 })),
     { url: absUrl("/tools/"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     ...siteConfig.tools.map((t) => ({ url: absUrl(`/tools/${t.slug}/`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 })),
-    ...["/about/", "/contact/", "/affiliate-disclosure/", "/privacy-policy/", "/terms-and-conditions/"].map((p) => ({ url: absUrl(p), lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 })),
+    ...["/about/", "/how-we-test/", "/contact/", "/affiliate-disclosure/", "/privacy-policy/", "/terms-and-conditions/"].map((p) => ({ url: absUrl(p), lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 })),
   ];
 }

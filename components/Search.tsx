@@ -50,7 +50,7 @@ export function Search({ placeholder = "Search machines, how-tos, fixes…" }: {
           e.preventDefault();
           if (results[active]) location.href = results[active].u;
         }}
-        className="flex items-center gap-2 rounded-full border-2 border-ink bg-white py-1.5 pl-5 pr-1.5 shadow-[4px_4px_0_0_#26221e] focus-within:shadow-[4px_4px_0_0_#a63d29]"
+        className="flex items-center gap-2 rounded-full border-2 border-ink bg-white py-1.5 pl-5 pr-1.5 shadow-[4px_4px_0_0_#1e1a17] focus-within:shadow-[4px_4px_0_0_#b23a26]"
       >
         <IconSearch className="shrink-0 text-ink-mute" />
         <label htmlFor="site-search" className="sr-only">Search Sew &amp; Hoop</label>
