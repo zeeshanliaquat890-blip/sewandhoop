@@ -85,9 +85,8 @@ Per page, in `work/{PageID}-{slug}/`:
 4. Keep manufacturer claims separate from independent findings. Never turn a maximum speed into typical
    real-world performance. Preserve units exactly. If sources conflict and the conflict cannot be resolved by
    checking variant and region, mark `Conflict` and move on.
-5. **After the Listener has added insight rows**, calculate the Sew Score for each product exactly as
-   `agents/sew-score.md` says and write the six score columns plus `Score Notes`. If a row already has a score
-   from the last 90 days, keep it.
+5. **The Sew Score is PAUSED by the owner.** Leave all score columns empty and never mention a score in the
+   article. (`agents/sew-score.md` describes the method for when it is switched back on.)
 6. Copy the subset of claims this article may use into `03-claims-used.csv`.
    A product needs, at minimum, verified machine type, built-in stitches (or embroidery field for embroidery-only
    machines), buttonhole type and US warranty to be featured. Fewer verified specs than that -> drop it and say so.

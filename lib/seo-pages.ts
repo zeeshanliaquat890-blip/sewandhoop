@@ -12,11 +12,11 @@ export const seoPages: Record<string, SeoEntry> = {
   },
   "/sewing-machines/": {
     title: "Sewing Machine Reviews & Buying Guides | Sew & Hoop",
-    description: "Find the right sewing machine: beginner picks, heavy-duty machines, comparisons and plain-English reviews, with Sew Scores and US price bands for every model.",
+    description: "Find the right sewing machine: beginner picks, heavy-duty machines, comparisons and plain-English reviews, with checked specs and US price bands for each model.",
   },
   "/embroidery-machines/": {
     title: "Embroidery Machine Reviews & Buying Guides | Sew & Hoop",
-    description: "Embroidery machines compared: hoop sizes, combo machines and multi-needle models for small businesses, with research-based Sew Scores and US price bands.",
+    description: "Embroidery machines compared: hoop sizes, combo machines and multi-needle models for small businesses, with specs checked at the source and US price bands.",
   },
   "/sergers/": {
     title: "Serger & Overlocker Reviews and Guides | Sew & Hoop",
@@ -52,7 +52,7 @@ export const seoPages: Record<string, SeoEntry> = {
   },
   "/tools/machine-comparison/": {
     title: "Compare Sewing Machines Side by Side (Free Tool)",
-    description: "Compare two sewing or embroidery machines side by side: Sew Score, stitches, speed, throat space, weight, features and warranty, with the better spec marked.",
+    description: "Compare two sewing or embroidery machines side by side: stitches, speed, throat space, weight, features, warranty and price band, with the better spec marked.",
   },
   "/tools/embroidery-pricing-calculator/": {
     title: "Embroidery Pricing Calculator: Price per 1,000 Stitches",
@@ -75,8 +75,8 @@ export const seoPages: Record<string, SeoEntry> = {
     description: "Sew & Hoop is an independent sewing and embroidery machine guide for US sewists. Meet the team, see what we cover, and learn how the site is funded honestly.",
   },
   "/how-we-review/": {
-    title: "How We Research & Score Sewing Machines",
-    description: "How Sew & Hoop chooses and compares sewing, embroidery and quilting machines, the sources we trust, and exactly how the research-based Sew Score is calculated.",
+    title: "How We Research and Review Sewing Machines (Method)",
+    description: "How Sew & Hoop chooses and compares sewing, embroidery and quilting machines: the sources we trust, how every spec is checked, and what we never do for money.",
   },
   "/contact/": {
     title: "Contact Us: Questions and Corrections | Sew & Hoop",

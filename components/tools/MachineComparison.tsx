@@ -55,7 +55,7 @@ export default function MachineComparison({ ctx }: { ctx?: ToolCtx }) {
     return (
       <ToolFrame title="Machine Comparison" badge="Coming soon">
         <p className="font-serif text-[1.35rem] font-bold">Our machine database is being built.</p>
-        <p className="mt-2 text-ink-soft">Every machine we research gets added here with its checked specs and Sew Score. Once there are at least two, you can compare them side by side.</p>
+        <p className="mt-2 text-ink-soft">Every machine we research gets added here with its checked specs. Once there are at least two, you can compare them side by side.</p>
       </ToolFrame>
     );
   }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { staticMetadata } from "@/lib/seo";
+import { siteConfig } from "@/site.config";
 import { SimplePage } from "@/components/SimplePage";
 import { ScoreRing, ScoreBars } from "@/components/Score";
 
@@ -16,11 +17,11 @@ const criteria = [
 export default function HowWeReview() {
   return (
     <SimplePage
-      title="How we research and score machines"
+      title={siteConfig.showSewScore ? "How we research and score machines" : "How we research and review machines"}
       kicker="Our process"
       path="/how-we-review/"
       updated="November 22, 2026"
-      intro="Every recommendation on Sew & Hoop is built from checked specifications and long-term owner reports, using the same method for every machine. Here's exactly how."
+      intro="Every recommendation on Sew & Hoop is built from checked specifications and owner reports, using the same method for every machine. Here's exactly how."
     >
       <h2>What our reviews are based on</h2>
       <p>
@@ -33,6 +34,8 @@ export default function HowWeReview() {
       </ul>
       <p>If a specification can&apos;t be confirmed from a primary source, it doesn&apos;t appear on the page. A guide missing a number is better than a guide that invents one.</p>
 
+      {siteConfig.showSewScore && (
+        <>
       <h2>The Sew Score</h2>
       <p>The Sew Score is our research-based rating out of 100. It is calculated once per machine, so a machine has the same score on every page — a 90 in one guide means the same as a 90 in another.</p>
       <div className="not-prose card my-8 grid items-center gap-6 p-6 sm:grid-cols-[auto_1fr]">
@@ -55,14 +58,16 @@ export default function HowWeReview() {
         <li><strong>Below 80.</strong> We rarely recommend these, and we say why when we do.</li>
       </ul>
 
+        </>
+      )}
       <h2>What we never do</h2>
       <ul>
-        <li>Accept payment for a place on a list or a better score.</li>
+        <li>Accept payment for a place on a list or a better ranking.</li>
         <li>Rank a weaker machine higher because it pays a bigger commission.</li>
         <li>Show exact prices that go out of date — we use price bands and send you to the retailer for today&apos;s price.</li>
         <li>Leave old picks up when a model is discontinued or replaced.</li>
       </ul>
-      <p>Spotted a mistake or have a question about a score? <Link href="/contact/">Tell us</Link> — we fix errors quickly.</p>
+      <p>Spotted a mistake or have a question about a recommendation? <Link href="/contact/">Tell us</Link> — we fix errors quickly.</p>
     </SimplePage>
   );
 }

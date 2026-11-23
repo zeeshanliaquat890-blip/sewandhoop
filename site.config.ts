@@ -18,6 +18,8 @@ export const siteConfig = {
    * Set to true when the site is ready to launch, then push.
    */
   allowIndexing: true,
+  /** Sew Score (0–100 rating). Paused by the owner: false hides every score and score claim on the site. */
+  showSewScore: false,
   /** Owner's request: switch indexing on automatically when the first real article goes live (one time only). */
   autoEnableIndexingAfterFirstArticle: false,
   language: "en-US",

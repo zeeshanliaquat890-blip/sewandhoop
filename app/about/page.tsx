@@ -17,7 +17,7 @@ export default function About() {
         ))}
       </ul>
       <h2>How we choose machines</h2>
-      <p>Our guides are research-based. Every specification is checked against the manufacturer&apos;s own manual or spec sheet for the exact model, every owner-experience point comes from patterns that keep coming up in long-term owner reports, and every machine is scored with the same Sew Score method. We say so plainly on every page, and we never claim to have tested a machine we haven&apos;t. <Link href="/how-we-review/">Read exactly how we review and score machines</Link>.</p>
+      <p>Our guides are research-based. Every specification is checked against the manufacturer&apos;s own manual or spec sheet for the exact model, and every owner-experience point comes from patterns that keep coming up in long-term owner reports. We say so plainly on every page, and we never claim to have tested a machine we haven&apos;t. <Link href="/how-we-review/">Read exactly how we review machines</Link>.</p>
       <p>Guides are updated when models are replaced, prices move into a different band, or new owner reports change the picture.</p>
       <h2>How we make money</h2>
       <p>Some links on this site are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. That never decides what we recommend. <Link href="/affiliate-disclosure/">Read our full disclosure</Link>.</p>

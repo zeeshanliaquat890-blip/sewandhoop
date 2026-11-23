@@ -5,7 +5,7 @@ before acting as that agent. The structure for the page comes from `packs.md`; t
 
 ```
 01-scout     -> SERP gaps, products and roles            work/{page}/02-research.md
-02-verifier  -> specs + claim ledger + Sew Score         product-master/*.csv, 03-claims-used.csv
+02-verifier  -> specs + claim ledger (score paused)        product-master/*.csv, 03-claims-used.csv
 03-listener  -> owner-reported patterns                  product-master/review-insights.csv
 04-architect -> outline, keywords, links                 04-content-brief.md
 05-writer    -> one section at a time                    05-sections/NN-*.md

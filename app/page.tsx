@@ -6,7 +6,7 @@ import { getPlannedForSilo } from "@/lib/urlmap";
 import { staticMetadata, websiteLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { Search } from "@/components/Search";
-import { SiloIcon, IconArrow, IconTool } from "@/components/Icons";
+import { SiloIcon, IconArrow, IconTool, IconCheck } from "@/components/Icons";
 import { ArticleCard } from "@/components/ArticleCard";
 import { MachineIllustration } from "@/components/Illustration";
 import { ScoreRing, ScoreBars } from "@/components/Score";
@@ -27,7 +27,7 @@ function topRated(articles: Article[]) {
   const out: { p: Product; a: Article }[] = [];
   for (const a of articles) {
     if (a.fm.template !== "roundup") continue;
-    for (const p of a.fm.products ?? []) if (p.badge && p.score !== undefined) out.push({ p, a });
+    for (const p of a.fm.products ?? []) if (p.badge && (p.score !== undefined || !siteConfig.showSewScore)) out.push({ p, a });
   }
   return out.sort((x, y) => (y.p.score ?? 0) - (x.p.score ?? 0)).slice(0, 4);
 }
@@ -74,8 +74,17 @@ export default function Home() {
               <MachineIllustration className="relative mt-[12%] w-full" />
             </div>
             <div className="card absolute -left-6 top-10 flex items-center gap-3 !rounded-xl px-4 py-3 text-ink">
-              <ScoreRing score={94} size={52} label="" />
-              <div className="leading-tight"><p className="label-cond text-[0.8rem] text-ink-mute">Sew Score</p><p className="font-bold">Outstanding</p></div>
+              {siteConfig.showSewScore ? (
+                <>
+                  <ScoreRing score={94} size={52} label="" />
+                  <div className="leading-tight"><p className="label-cond text-[0.8rem] text-ink-mute">Sew Score</p><p className="font-bold">Outstanding</p></div>
+                </>
+              ) : (
+                <>
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-sage text-white"><IconCheck size={20} /></span>
+                  <div className="leading-tight"><p className="label-cond text-[0.8rem] text-ink-mute">Every spec</p><p className="font-bold">Checked at the source</p></div>
+                </>
+              )}
             </div>
             <div className="absolute -right-2 bottom-16"><span className="ribbon !text-[1rem]">Best overall</span></div>
             <div className="card absolute bottom-2 left-4 !rounded-xl px-4 py-3 text-ink">
@@ -92,7 +101,7 @@ export default function Home() {
         <ul className="card grid grid-cols-2 gap-px overflow-hidden !bg-line md:grid-cols-4">
           {[
             [String(totalPlanned), "in-depth guides in the works"],
-            ["100-pt", "Sew Score on every machine"],
+            siteConfig.showSewScore ? ["100-pt", "Sew Score on every machine"] : ["100%", "of specs checked against the maker's own pages"],
             [String(siteConfig.tools.length), "free calculators & tools"],
             ["0", "paid placements. Ever."],
           ].map(([n, l]) => (
@@ -142,13 +151,13 @@ export default function Home() {
       {picks.length > 0 && (
         <section aria-labelledby="top-rated" className="mt-20 border-y border-line bg-cream py-16">
           <div className="mx-auto max-w-site px-4 sm:px-6">
-            <p className="kicker">Highest Sew Scores</p>
-            <h2 id="top-rated" className="mt-1 text-[2.2rem] sm:text-[2.6rem]">Top-rated machines right now</h2>
+            <p className="kicker">{siteConfig.showSewScore ? "Highest Sew Scores" : "Editors' picks"}</p>
+            <h2 id="top-rated" className="mt-1 text-[2.2rem] sm:text-[2.6rem]">{siteConfig.showSewScore ? "Top-rated machines right now" : "Our top picks right now"}</h2>
             <ol className={`mt-8 grid gap-5 sm:grid-cols-2 ${picks.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
               {picks.map(({ p, a }, i) => (
                 <li key={a.slug + p.id} className="card relative flex flex-col overflow-hidden">
                   <span className="ribbon absolute left-0 top-4 z-10">{p.badge}</span>
-                  <div className="absolute right-3 top-3 z-10"><ScoreRing score={p.score!} size={54} label="" /></div>
+                  {p.score !== undefined && <div className="absolute right-3 top-3 z-10"><ScoreRing score={p.score} size={54} label="" /></div>}
                   <ProductImage product={p} className="!rounded-none" />
                   <div className="flex flex-1 flex-col p-5">
                     <p className="label-cond text-[0.8rem] text-ink-mute">#{i + 1} · from {a.fm.title.replace(/\s*\(.*\)$/, "")}</p>
@@ -215,8 +224,8 @@ export default function Home() {
         </section>
       )}
 
-      {/* ---------- Sew Score explainer ---------- */}
-      <section aria-labelledby="score" className="weave mt-24 text-white">
+      {/* ---------- Sew Score explainer (hidden while the score is paused) ---------- */}
+      {siteConfig.showSewScore && <section aria-labelledby="score" className="weave mt-24 text-white">
         <div className="mx-auto grid max-w-site items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <p className="label-cond text-[0.95rem] text-[#e9a796]">How we rate machines</p>
@@ -247,7 +256,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
       {/* ---------- Tools ---------- */}
       <section aria-labelledby="tools-h" className="mx-auto max-w-site px-4 pt-20 sm:px-6">

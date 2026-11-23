@@ -1,3 +1,5 @@
+> **PAUSED by the owner (showSewScore: false in site.config.ts).** Do not calculate or mention scores until it is switched back on.
+
 # The Sew Score
 
 A research-based score out of 100, shown on product boxes, verdicts, comparison tables and the Machine Comparison

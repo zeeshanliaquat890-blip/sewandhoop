@@ -1,5 +1,8 @@
+import { siteConfig } from "@/site.config";
+
 /** Sew Score — our 0–100 rating, shown as a ring. */
 export function ScoreRing({ score, size = 72, label = "Sew Score", onDark = false }: { score: number; size?: number; label?: string; onDark?: boolean }) {
+  if (!siteConfig.showSewScore) return null;
   const r = 30;
   const c = 2 * Math.PI * r;
   const pct = Math.max(0, Math.min(100, score)) / 100;
@@ -17,6 +20,7 @@ export function ScoreRing({ score, size = 72, label = "Sew Score", onDark = fals
 
 /** Sub-score bars, e.g. Stitch quality 92 */
 export function ScoreBars({ scores }: { scores?: Record<string, number> }) {
+  if (!siteConfig.showSewScore) return null;
   if (!scores || !Object.keys(scores).length) return null;
   return (
     <dl className="grid gap-2.5">
