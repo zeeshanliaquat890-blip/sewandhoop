@@ -91,6 +91,9 @@ jobs:
         id: pipeline
         if: steps.pick.outputs.page != ''
         uses: anthropics/claude-code-action@v1
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |

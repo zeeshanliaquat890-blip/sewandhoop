@@ -66,10 +66,10 @@ Selected products from `02-research.md`; `product-master/review-insights.csv`.
 ## JOB
 Find **recurring patterns** in what owners report about each selected product. Try these sources in order; if one
 is blocked, record it and go to the next (never disguise the client to get past a block):
-1. Reddit's public JSON endpoints, identifying ourselves honestly and at a gentle pace (one request every few
-   seconds), e.g. `curl -sL -A "sewandhoop-research/1.0 (+https://sewandhoop.com/about/)"
-   "https://www.reddit.com/r/sewing/search.json?q=singer%204423&restrict_sr=1&limit=25"` (also r/quilting,
-   r/MachineEmbroidery, r/sewhelp). If Reddit refuses, move on.
+1. Reddit through the official API: `python scripts/reddit_search.py "singer 4423"` lists matching threads in
+   r/sewing, r/sewhelp, r/quilting and r/MachineEmbroidery (`--subs` to change); then read the useful ones with
+   `python scripts/reddit_search.py --thread <permalink>`. Use it for research only: never quote, never name
+   users, record patterns in your own words. If it reports that Reddit is unavailable, move on.
 2. WebSearch with `site:reddit.com`, `site:quiltingboard.com`, `site:patternreview.com`, `"<model>" problems` --
    **search snippets count only when the same pattern appears in at least three different threads or pages**;
    record every URL.
