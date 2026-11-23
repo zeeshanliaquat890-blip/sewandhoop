@@ -184,5 +184,497 @@
   "claim": "Free arm",
   "status": "Verified -- primary source",
   "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4423-sewing-machine"
+ },
+ "C0032": {
+  "product": "brother-se700",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0033": {
+  "product": "brother-se700",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0034": {
+  "product": "brother-se700",
+  "claim": "Built-in sewing stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0035": {
+  "product": "brother-se700",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0036": {
+  "product": "brother-se700",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0037": {
+  "product": "brother-se700",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0038": {
+  "product": "brother-se700",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0039": {
+  "product": "brother-se2000",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0040": {
+  "product": "brother-se2000",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0041": {
+  "product": "brother-se2000",
+  "claim": "Built-in sewing stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0042": {
+  "product": "brother-se2000",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0043": {
+  "product": "brother-se2000",
+  "claim": "Maximum embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0044": {
+  "product": "brother-se2000",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0045": {
+  "product": "brother-se2000",
+  "claim": "Space, needle to arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0046": {
+  "product": "brother-se2000",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0047": {
+  "product": "brother-pe900",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0048": {
+  "product": "brother-pe900",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0049": {
+  "product": "brother-pe900",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0050": {
+  "product": "brother-pe900",
+  "claim": "Maximum embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0051": {
+  "product": "brother-pe900",
+  "claim": "Wireless LAN",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0052": {
+  "product": "brother-pe900",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0053": {
+  "product": "brother-pe900",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0054": {
+  "product": "brother-pe545",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0055": {
+  "product": "brother-pe545",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0056": {
+  "product": "brother-pe545",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0057": {
+  "product": "brother-pe545",
+  "claim": "Maximum embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0058": {
+  "product": "brother-pe545",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0059": {
+  "product": "brother-pe545",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0060": {
+  "product": "brother-pe545",
+  "claim": "Wireless LAN",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0061": {
+  "product": "brother-pe545",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0062": {
+  "product": "brother-pr680w",
+  "claim": "Needles",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0063": {
+  "product": "brother-pr680w",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0064": {
+  "product": "brother-pr680w",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0065": {
+  "product": "brother-pr680w",
+  "claim": "Built-in lettering fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0066": {
+  "product": "brother-pr680w",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0067": {
+  "product": "brother-pr680w",
+  "claim": "Embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0068": {
+  "product": "brother-pr680w",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0069": {
+  "product": "brother-pr680w",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0070": {
+  "product": "brother-pr680w",
+  "claim": "Price",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pr680w"
+ },
+ "C0071": {
+  "product": "brother-prs100",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0072": {
+  "product": "brother-prs100",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0073": {
+  "product": "brother-prs100",
+  "claim": "Built-in lettering fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0074": {
+  "product": "brother-prs100",
+  "claim": "Maximum embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0075": {
+  "product": "brother-prs100",
+  "claim": "Display",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0076": {
+  "product": "brother-prs100",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0077": {
+  "product": "brother-prs100",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0078": {
+  "product": "brother-nq1700e",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0079": {
+  "product": "brother-nq1700e",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0080": {
+  "product": "brother-nq1700e",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0081": {
+  "product": "brother-nq1700e",
+  "claim": "Display",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0082": {
+  "product": "brother-nq1700e",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0083": {
+  "product": "brother-nq1700e",
+  "claim": "Wireless",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0084": {
+  "product": "brother-nq1700e",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/nq1700e"
+ },
+ "C0085": {
+  "product": "brother-xe1",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0086": {
+  "product": "brother-xe1",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0087": {
+  "product": "brother-xe1",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0088": {
+  "product": "brother-xe1",
+  "claim": "Maximum embroidery speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0089": {
+  "product": "brother-xe1",
+  "claim": "Display",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0090": {
+  "product": "brother-xe1",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0091": {
+  "product": "brother-xe1",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0092": {
+  "product": "brother-xe1",
+  "claim": "Price",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/xe1"
+ },
+ "C0093": {
+  "product": "singer-se9180",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0094": {
+  "product": "singer-se9180",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0095": {
+  "product": "singer-se9180",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0096": {
+  "product": "singer-se9180",
+  "claim": "Embroidery hoop included",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0097": {
+  "product": "singer-se9180",
+  "claim": "Maximum speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0098": {
+  "product": "singer-se9180",
+  "claim": "Touch screen",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0099": {
+  "product": "singer-se9180",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0100": {
+  "product": "singer-se9180",
+  "claim": "Metal frame",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0101": {
+  "product": "singer-se9180",
+  "claim": "Sewing space, needle to tower",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0102": {
+  "product": "singer-se9180",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0103": {
+  "product": "singer-se9180",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0104": {
+  "product": "singer-se9180",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-se9180-sewing-and-embroidery-machine"
+ },
+ "C0105": {
+  "product": "singer-legacy-se300",
+  "claim": "Built-in sewing stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0106": {
+  "product": "singer-legacy-se300",
+  "claim": "Embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0107": {
+  "product": "singer-legacy-se300",
+  "claim": "Embroidery hoops included",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0108": {
+  "product": "singer-legacy-se300",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0109": {
+  "product": "singer-legacy-se300",
+  "claim": "Maximum speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0110": {
+  "product": "singer-legacy-se300",
+  "claim": "Sewing space, needle to tower",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0111": {
+  "product": "singer-legacy-se300",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0112": {
+  "product": "singer-legacy-se300",
+  "claim": "Windows-only software",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0113": {
+  "product": "singer-legacy-se300",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
  }
 }
