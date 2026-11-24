@@ -676,5 +676,503 @@
   "claim": "US warranty",
   "status": "Verified -- primary source",
   "sourceUrl": "https://www.singer.com/products/singer-legacy-se300-sewing-embroidery-machine"
+ },
+ "C0114": {
+  "product": "brother-bq950",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0115": {
+  "product": "brother-bq950",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0116": {
+  "product": "brother-bq950",
+  "claim": "Workspace to the right of the needle (page: \"Workspace for quilts\")",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0117": {
+  "product": "brother-bq950",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0118": {
+  "product": "brother-bq950",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0119": {
+  "product": "brother-bq950",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0120": {
+  "product": "brother-bq950",
+  "claim": "Needle up/down, automatic thread cutter, knee lifter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0121": {
+  "product": "brother-bq950",
+  "claim": "Quilters Bundle contents",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0122": {
+  "product": "brother-bq950",
+  "claim": "Drop feed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq950"
+ },
+ "C0123": {
+  "product": "brother-bq2500",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0124": {
+  "product": "brother-bq2500",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0125": {
+  "product": "brother-bq2500",
+  "claim": "Workspace to the right of the needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0126": {
+  "product": "brother-bq2500",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0127": {
+  "product": "brother-bq2500",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0128": {
+  "product": "brother-bq2500",
+  "claim": "Needle threading",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0129": {
+  "product": "brother-bq2500",
+  "claim": "Dual feed foot",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0130": {
+  "product": "brother-bq2500",
+  "claim": "Automatic Height Adjuster",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0131": {
+  "product": "brother-bq2500",
+  "claim": "Pivot function and drop feed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0132": {
+  "product": "brother-bq2500",
+  "claim": "Display",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0133": {
+  "product": "brother-bq2500",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0134": {
+  "product": "brother-bq2500",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0135": {
+  "product": "brother-bq2500",
+  "claim": "Thread cutter, knee lifter, needle up/down",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq2500"
+ },
+ "C0136": {
+  "product": "brother-bq3100",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0137": {
+  "product": "brother-bq3100",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0138": {
+  "product": "brother-bq3100",
+  "claim": "Workspace to the right of the needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0139": {
+  "product": "brother-bq3100",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0140": {
+  "product": "brother-bq3100",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0141": {
+  "product": "brother-bq3100",
+  "claim": "Needle threading",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0142": {
+  "product": "brother-bq3100",
+  "claim": "Sew Straight Laser Vision Guide and V-Sonic sensor pen",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0143": {
+  "product": "brother-bq3100",
+  "claim": "Dual feed foot",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0144": {
+  "product": "brother-bq3100",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0145": {
+  "product": "brother-bq3100",
+  "claim": "Display and USB",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0146": {
+  "product": "brother-bq3100",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/bq3100"
+ },
+ "C0147": {
+  "product": "brother-cs7000x",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0148": {
+  "product": "brother-cs7000x",
+  "claim": "Included quilting accessories",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/cs7000x"
+ },
+ "C0149": {
+  "product": "babylock-jazz-ii",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0150": {
+  "product": "babylock-jazz-ii",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0151": {
+  "product": "babylock-jazz-ii",
+  "claim": "Space to the right of the needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0152": {
+  "product": "babylock-jazz-ii",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0153": {
+  "product": "babylock-jazz-ii",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0154": {
+  "product": "babylock-jazz-ii",
+  "claim": "Needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0155": {
+  "product": "babylock-jazz-ii",
+  "claim": "Included feet and knee lift",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0156": {
+  "product": "babylock-jazz-ii",
+  "claim": "Extension table",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/machines/sewing/jazz-iid"
+ },
+ "C0157": {
+  "product": "babylock-jazz-ii",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://cdn.shopify.com/s/files/1/0290/0597/1516/files/JazzII_Spec_2021_2.pdf"
+ },
+ "C0158": {
+  "product": "babylock-jazz-ii",
+  "claim": "Drop feed for free-motion",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://cdn.shopify.com/s/files/1/0290/0597/1516/files/JazzII_Spec_2021_2.pdf"
+ },
+ "C0159": {
+  "product": "babylock-jazz-ii",
+  "claim": "Sold through authorized retailers",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://babylock.com/warranty-policy"
+ },
+ "C0160": {
+  "product": "juki-tl-2010q",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0161": {
+  "product": "juki-tl-2010q",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0162": {
+  "product": "juki-tl-2010q",
+  "claim": "Maximum stitch length",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0163": {
+  "product": "juki-tl-2010q",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0164": {
+  "product": "juki-tl-2010q",
+  "claim": "Auxiliary table size",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0165": {
+  "product": "juki-tl-2010q",
+  "claim": "Automatic thread trimmer and needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0166": {
+  "product": "juki-tl-2010q",
+  "claim": "Drop feed, needle up/down, knee lifter, LED lighting",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0167": {
+  "product": "juki-tl-2010q",
+  "claim": "Speed control",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0168": {
+  "product": "juki-tl-2010q",
+  "claim": "Frame",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0169": {
+  "product": "juki-tl-2010q",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/warranty"
+ },
+ "C0170": {
+  "product": "juki-tl-2010q",
+  "claim": "Price band",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://allbrands.com/products/31964"
+ },
+ "C0171": {
+  "product": "juki-tl-2000qi",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0172": {
+  "product": "juki-tl-2000qi",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0173": {
+  "product": "juki-tl-2000qi",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0174": {
+  "product": "juki-tl-2000qi",
+  "claim": "Auxiliary table size",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0175": {
+  "product": "juki-tl-2000qi",
+  "claim": "Thread trimming",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0176": {
+  "product": "juki-tl-2000qi",
+  "claim": "Needle threader, drop feed, needle up/down, knee lift, LED",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0177": {
+  "product": "juki-tl-2000qi",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/warranty"
+ },
+ "C0178": {
+  "product": "juki-tl-2000qi",
+  "claim": "Price band",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.qualitysewing.com/collections/juki"
+ },
+ "C0179": {
+  "product": "juki-hzl-nx7",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0180": {
+  "product": "juki-hzl-nx7",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0181": {
+  "product": "juki-hzl-nx7",
+  "claim": "Throat space",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0182": {
+  "product": "juki-hzl-nx7",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0183": {
+  "product": "juki-hzl-nx7",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0184": {
+  "product": "juki-hzl-nx7",
+  "claim": "Dual feed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0185": {
+  "product": "juki-hzl-nx7",
+  "claim": "Thread trimming, needle up/down, drop-in bobbin, free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0186": {
+  "product": "juki-hzl-nx7",
+  "claim": "Extension table",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/hzl-nx7.html"
+ },
+ "C0187": {
+  "product": "juki-hzl-nx7",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/warranty"
+ },
+ "C0188": {
+  "product": "juki-hzl-f600",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0189": {
+  "product": "juki-hzl-f600",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0190": {
+  "product": "juki-hzl-f600",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0191": {
+  "product": "juki-hzl-f600",
+  "claim": "Machine weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0192": {
+  "product": "juki-hzl-f600",
+  "claim": "Automatic needle threader and thread trimming",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0193": {
+  "product": "juki-hzl-f600",
+  "claim": "Drop feed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0194": {
+  "product": "juki-hzl-f600",
+  "claim": "Included accessories",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/exceed-f600-quilt-pro-special.html"
+ },
+ "C0195": {
+  "product": "juki-hzl-f600",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/warranty"
+ },
+ "C0196": {
+  "product": "babylock-jazz-ii",
+  "claim": "Optional accessories",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://cdn.shopify.com/s/files/1/0290/0597/1516/files/JazzII_Spec_2021_2.pdf"
  }
 }

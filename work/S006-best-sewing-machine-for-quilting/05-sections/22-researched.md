@@ -1,0 +1,3 @@
+## How this article was researched
+
+This guide is research-based. We read each maker's US product page for the exact model, recorded the figures with a source and left out anything we could not verify. Juki's warranty comes from its US warranty page and Baby Lock's from its spec sheet. Manufacturer speeds are maximums, not typical results. Price bands for the Juki TL models come from authorized dealer listings. We did not test, own or measure these machines, and we do not include owner-review patterns because we could not gather enough consistent evidence. See [how we review](/how-we-review/). Prices are bands, checked November 2026.
