@@ -1174,5 +1174,89 @@
   "claim": "Optional accessories",
   "status": "Verified -- primary source",
   "sourceUrl": "https://cdn.shopify.com/s/files/1/0290/0597/1516/files/JazzII_Spec_2021_2.pdf"
+ },
+ "C0197": {
+  "product": "general",
+  "claim": "What a hem is",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Hem"
+ },
+ "C0198": {
+  "product": "general",
+  "claim": "Hem types named",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Hem"
+ },
+ "C0199": {
+  "product": "general",
+  "claim": "Narrow double topstitched hem, wovens",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0200": {
+  "product": "general",
+  "claim": "Narrow double topstitched hem, knits",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0201": {
+  "product": "general",
+  "claim": "Topstitched hem",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0202": {
+  "product": "general",
+  "claim": "Zigzag hem for stretchable knits",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0203": {
+  "product": "general",
+  "claim": "Stitch length for knit hems",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0204": {
+  "product": "general",
+  "claim": "Presser feet that save hemming time",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C104/"
+ },
+ "C0205": {
+  "product": "general",
+  "claim": "Blind hem set-up",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://help.singer.com/en-US/how-to-blind-hem-410010"
+ },
+ "C0206": {
+  "product": "general",
+  "claim": "Preparing the raw edge before a blind hem",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://help.singer.com/en-US/how-to-blind-hem-410010"
+ },
+ "C0207": {
+  "product": "general",
+  "claim": "Trial sewing",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://support.brother.com/g/s/hf/htmldoc/hsm/om/888p5x/en/03_02.html"
+ },
+ "C0208": {
+  "product": "general",
+  "claim": "Needle for woven cotton",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.schmetzneedles.com/pages/needles-by-fabric-type"
+ },
+ "C0209": {
+  "product": "general",
+  "claim": "Needle for knit cotton",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.schmetzneedles.com/pages/needles-by-fabric-type"
+ },
+ "C0210": {
+  "product": "general",
+  "claim": "Needle for denim",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.schmetzneedles.com/pages/needles-by-fabric-type"
  }
 }
