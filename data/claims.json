@@ -1258,5 +1258,101 @@
   "claim": "Needle for denim",
   "status": "Verified -- primary source",
   "sourceUrl": "https://www.schmetzneedles.com/pages/needles-by-fabric-type"
+ },
+ "C0211": {
+  "product": "brother-se700",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0212": {
+  "product": "brother-pe545",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0213": {
+  "product": "brother-se2000",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se2000"
+ },
+ "C0214": {
+  "product": "brother-pe900",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe900"
+ },
+ "C0215": {
+  "product": "brother-prs100",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/prs100"
+ },
+ "C0216": {
+  "product": "brother-pe545",
+  "claim": "Included with machine",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0217": {
+  "product": "brother-pe545",
+  "claim": "Design transfer",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pe545"
+ },
+ "C0218": {
+  "product": "brother-se700",
+  "claim": "Included with machine",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se700"
+ },
+ "C0219": {
+  "product": "general",
+  "claim": "Digitizing software sold separately",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/PEDESIGN11"
+ },
+ "C0220": {
+  "product": "general",
+  "claim": "Single-needle vs multi-needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Machine_embroidery"
+ },
+ "C0221": {
+  "product": "general",
+  "claim": "Hoop and stabilizer",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Machine_embroidery"
+ },
+ "C0222": {
+  "product": "general",
+  "claim": "Design file formats",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Machine_embroidery"
+ },
+ "C0223": {
+  "product": "general",
+  "claim": "Free-motion embroidery on a sewing machine",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Machine_embroidery"
+ },
+ "C0224": {
+  "product": "general",
+  "claim": "Free-motion embroidery set-up: feed dogs and foot",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C213/"
+ },
+ "C0225": {
+  "product": "general",
+  "claim": "Free-motion embroidery set-up: hoop",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C213/"
+ },
+ "C0226": {
+  "product": "general",
+  "claim": "Free-motion embroidery set-up: needle and stitch",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://pubs.nmsu.edu/_c/C213/"
  }
 }

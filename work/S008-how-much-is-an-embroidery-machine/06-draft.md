@@ -1,0 +1,150 @@
+---
+pageId: "S008"
+title: "How Much Is an Embroidery Machine?"
+seoTitle: "How Much Is an Embroidery Machine? Prices by Type (2026)"
+description: "How much embroidery machines cost in the US: price bands from about $400 to multi-needle models, extra costs to plan for, and a free-motion option."
+template: informational
+contentType: "Informational Guide"
+primaryKeyword: "how much is an embroidery machine"
+dek: "A plain guide to what home embroidery machines cost in the US, what the money buys, and what else to budget for."
+status: draft
+publishAt: "2026-11-26"
+updatedAt: "2026-11-26"
+faq:
+  - q: "How much are embroidery machines for beginners?"
+    a: "Entry-level home models with a 4 x 4 inch hoop sit around $400 to $600 in the US. That range covers an embroidery-only machine and a combined sewing and embroidery machine. Plan a little extra for stabilizer, thread and needles."
+  - q: "Can you embroider with a sewing machine?"
+    a: "Yes, in two ways. A sewing machine that can lower its feed dogs can do free-motion embroidery, where you move the hoop by hand. A combination sewing and embroidery machine stitches built-in or loaded designs for you."
+  - q: "Do I need software to use an embroidery machine?"
+    a: "Not at first. Home machines come with built-in designs and fonts, and many accept files by USB or wireless transfer. Software is only needed if you want to digitize your own designs, which is a separate purchase."
+  - q: "What is a good embroidery machine for a first purchase?"
+    a: "A good first machine is one you will actually use: a hoop size that fits your projects, a screen you find easy to read, and US service nearby. For most home projects a 4 x 4 or 5 x 7 inch hoop is a sensible start."
+  - q: "How do embroidery machines work?"
+    a: "The fabric is held tight in a hoop with stabilizer under it. The machine moves the hoop under the needle by itself, following a digital design file, while you change thread colors on a single-needle model."
+---
+
+How much is an embroidery machine? In the US, a home model with a 4 x 4 inch embroidery area <Cite id="C0054" /> costs roughly $400 to $600 <Cite id="C0212" />, and prices climb through about $1,100 to $1,700 for a 5 x 7 inch area <Cite id="C0214" />, to around $4,000 for a larger single-needle machine <Cite id="C0215" />. Six-needle machines for small businesses cost far more, and the maker does not publish a price for them.
+
+This guide explains what each price band buys, which extra costs to plan for, and how to get started for almost nothing if you already own a sewing machine. It is built from manufacturer pages and published guidance, not from our own stitching, and each figure carries its source.
+
+## What an embroidery machine is, in one minute
+
+An embroidery machine stitches decorative designs onto fabric. The fabric is held taut in a hoop (a frame of two rings) with a layer of stabilizer, a backing that stops the fabric from puckering, and thread type and stabilizer both strongly affect how the result looks <Cite id="C0221" />. The machine then moves the hoop for you, following a digital design file.
+
+Home machines usually have one needle, so you change thread colors by hand during the job, while multi-needle machines are threaded with several colors before the run starts <Cite id="C0220" />. That one difference explains a lot of the price gap.
+
+## Embroidery machine prices by type
+
+Prices below are bands from the manufacturer's US product pages, rounded so they stay useful when sale prices move. Brother is used as the example because it publishes US prices for its home models.
+
+| What you get | Example (Brother) | Embroidery area | Price band |
+|---|---|---|---|
+| Embroidery-only, small | PE545 | 4 x 4 in <Cite id="C0054" /> | $400–$500 <Cite id="C0212" /> |
+| Sewing and embroidery, small | SE700 | 4 x 4 in <Cite id="C0032" /> | $500–$600 <Cite id="C0211" /> |
+| Embroidery-only, mid-size | PE900 | 5 x 7 in <Cite id="C0047" /> | $1,100–$1,300 <Cite id="C0214" /> |
+| Sewing and embroidery, mid-size | SE2000 | 5 x 7 in <Cite id="C0039" /> | $1,400–$1,700 <Cite id="C0213" /> |
+| Single-needle, large area | PRS100 | 8 x 8 in <Cite id="C0071" /> | $3,500–$4,500 <Cite id="C0215" /> |
+| Six-needle | PR680W | 8 x 12 in <Cite id="C0063" /> | Not published by the maker <Cite id="C0070" /> |
+
+These are examples, not a ranking. Our [best embroidery machine guide](/best-embroidery-machine/) compares these models and others properly.
+
+### Under $600: the entry level
+
+The 4 x 4 inch machines are where most people start. That area fits a small monogram, a pocket design or a patch. The PE545 only embroiders, while the SE700 also sews, so you pay about $100 more for a second job <Cite id="C0212" /> <Cite id="C0211" />.
+
+Both include one 4 x 4 inch hoop <Cite id="C0216" /> <Cite id="C0218" />, and both come with built-in designs, so you can stitch on day one. The trade-off is size: anything bigger than the hoop needs a bigger machine.
+
+### $1,100 to $1,700: more room to work
+
+The step to a 5 x 7 inch area is the one many hobbyists end up wanting. It handles a small jacket-back design, a tea towel or a larger applique. As with the small models, the combined sewing and embroidery machine costs a few hundred dollars more than the embroidery-only one <Cite id="C0214" /> <Cite id="C0213" />.
+
+### Around $4,000: large-area single-needle machines
+
+Machines like the PRS100 give an 8 x 8 inch area but still have one needle <Cite id="C0071" /> <Cite id="C0215" />. They suit people who stitch often and want larger designs without moving to a multi-needle machine.
+
+### Multi-needle machines for small businesses
+
+A six-needle machine such as the PR680W holds six colors at once <Cite id="C0062" />. Brother's own page shows no price for it, because it is sold through dealers <Cite id="C0070" />. If you are weighing this for orders and customers, ask two authorized dealers for a quote that includes the stand, hoops and training.
+
+## What else you will pay for
+
+The machine price is not the whole budget. Plan for these:
+
+- **Stabilizer and thread.** Every design needs stabilizer under the fabric <Cite id="C0221" />. A small stock of <AffiliateLink query="cut away embroidery stabilizer 8 inch">cut-away stabilizer</AffiliateLink> and embroidery thread covers the first projects.
+- **Extra hoops.** Most machines include one or two sizes. The SE700 comes with a 4 x 4 inch hoop set <Cite id="C0218" />, so a different shape means a separate purchase.
+- **Digitizing software.** Brother sells PE-DESIGN 11 as a separate product, and its page offers a free trial <Cite id="C0219" />. Skip this at first: built-in designs and loaded files are enough to learn on.
+- **Designs.** Machines read files in formats tied to the brand, such as .PES for Brother and .DST for several makers <Cite id="C0222" />. Check that the designs you buy match your machine.
+- **Service.** Entry machines carry a 1/2/25-year limited warranty from Brother, which is a split-term warranty <Cite id="C0038" />. Ask a local dealer what servicing costs after that.
+
+If you plan to sell stitched items, the <a href="/tools/embroidery-pricing-calculator/">Embroidery Pricing Calculator</a> helps you work out whether a machine can pay for itself.
+
+## Can you embroider with a sewing machine?
+
+Yes, two ways.
+
+**Free-motion embroidery** works on a basic zigzag sewing machine with the feed dogs (the small teeth that move fabric) lowered, while you guide the hooped fabric by hand <Cite id="C0223" />. Because you steer, no two pieces come out identical <Cite id="C0223" />. NMSU Extension's guide describes the set-up: lower or cover the feed dog <Cite id="C0224" />, use a 6 inch or 8 inch hoop with the inner ring extended 1/8 inch <Cite id="C0225" />, and start with a new, sharp 75/11 needle and the stitch length set to zero <Cite id="C0226" />.
+
+That costs a hoop and some practice, so it is the cheapest way to try the craft. It will not run a lettered design for you, so it does not replace an embroidery machine.
+
+**A combination machine** is a sewing machine with an embroidery unit, such as the SE700, which also embroiders a 4 x 4 inch area <Cite id="C0032" />. This is the answer if you want to sew and embroider on one machine.
+
+If you want to use embroidery thread for ordinary seams, check your manual first, and sew a test on scrap fabric before the real project <Cite id="C0207" />.
+
+## How to use an embroidery machine, in five steps
+
+<Steps>
+<Step title="Hoop the fabric with stabilizer">
+Place stabilizer under the fabric and tighten the hoop so the fabric is taut but not stretched <Cite id="C0221" />.
+</Step>
+<Step title="Load or choose a design">
+Pick a built-in design, or send a file to the machine by USB or wireless transfer. On the PE545, Brother lists both a USB port and wireless transfer <Cite id="C0217" />.
+</Step>
+<Step title="Thread the needle and bobbin">
+Use the thread colors the design calls for. On a single-needle machine you will change colors during the job <Cite id="C0220" />.
+</Step>
+<Step title="Attach the hoop and start">
+The machine moves the hoop under the needle by itself while you watch for thread breaks.
+</Step>
+<Step title="Trim and remove the stabilizer">
+Take the hoop off, trim jump threads, and tear or cut away excess stabilizer.
+</Step>
+</Steps>
+
+## Three sample budgets
+
+Numbers are easier to judge with a picture of the whole spend. These examples use the bands above and treat supplies as a small extra, because we have no verified price for them.
+
+**The curious beginner.** You already own a sewing machine that can lower its feed dogs. Your cost is a hoop, a few needles, stabilizer and thread. This is the lowest-risk way to learn whether you enjoy the craft, and it needs no machine purchase at all <Cite id="C0224" />.
+
+**The hobbyist who wants monograms and gifts.** A 4 x 4 inch machine in the $400 to $600 band covers names, pockets and small motifs <Cite id="C0212" /> <Cite id="C0211" />. Add stabilizer and thread, and you can start with the built-in designs.
+
+**The home crafter who wants bigger projects.** A 5 x 7 inch machine in the $1,100 to $1,700 band gives more room, and the extra cost buys area rather than a different kind of embroidery <Cite id="C0214" /> <Cite id="C0213" />. If you also want to sew garments on the same machine, the combined version sits at the higher end of that band <Cite id="C0213" />.
+
+## How to decide what is a good embroidery machine for you
+
+A good machine is the one that fits what you will stitch. Work through these questions before you look at prices:
+
+1. **What is the biggest design you want?** The embroidery area caps design size, so a 4 x 4 inch area suits small items and a 5 x 7 inch area gives more space <Cite id="C0054" /> <Cite id="C0047" />.
+2. **Do you want to sew on the same machine?** A combination machine does both jobs but costs more than an embroidery-only one of the same size <Cite id="C0211" /> <Cite id="C0212" />.
+3. **How will designs reach the machine?** Check for USB or wireless transfer, and confirm the file format your designs come in <Cite id="C0222" />.
+4. **Who will service it?** Ask a local authorized dealer what is covered and what is not. Brother lists a 1/2/25-year limited warranty on the SE700, which splits coverage by term <Cite id="C0038" />.
+5. **How often will you use it?** Occasional use rarely justifies a larger price band, while frequent use for orders may.
+
+## Common mistakes when budgeting
+
+- **Buying for the cheapest price only.** A 4 x 4 inch hoop is a hard limit on design size, so decide what you want to stitch first.
+- **Forgetting the supplies.** Stabilizer and thread are ongoing costs.
+- **Paying for software too early.** A free trial and built-in designs let you learn before you decide <Cite id="C0219" />.
+- **Assuming one needle is a flaw.** It only means you change colors by hand <Cite id="C0220" />.
+
+## What this means for choosing a machine
+
+Pick the hoop size by what you want to make, then pick the price band that matches it. If you only want to try the craft, free-motion on a sewing machine you already own costs the least. If you want to sew and embroider on one machine, look at combination models. If you want large designs or orders, step up to a single-needle or multi-needle model.
+
+Our [embroidery machines hub](/embroidery-machines/) lists every guide in this section, and the [best embroidery machine guide](/best-embroidery-machine/) compares specific models. The <a href="/tools/stitch-count-estimator/">Stitch Count &amp; Time Estimator</a> shows how long a design may take to stitch.
+
+## How this article was researched
+
+This guide is research-based. We did not stitch with these machines or test any of them for it. Price bands and specifications come from Brother's US product pages, the general explanations from a reference work (Wikipedia, *Machine embroidery*), and the free-motion set-up from an NMSU Extension guide (C-213). Every figure is tied to a source in the page's citations. Prices change often, so treat the bands as a guide and check the live listing. Dealer prices for multi-needle machines and for digitizing software could not be confirmed from two sources, so we left them out. See [how we review](/how-we-review/).
+
+{/* Pending internal links: /embroidery-machine-for-beginners/ (S010), /embroidery-machine-vs-sewing-machine/ (S040), /how-to-start-embroidery/ (S022) */}
