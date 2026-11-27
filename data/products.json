@@ -555,7 +555,7 @@
   "type": "Mechanical heavy-duty sewing machine",
   "asin": null,
   "amazonQuery": "singer heavy duty 4552 sewing machine",
-  "image": null,
+  "image": "/images/products/singer-4552.webp",
   "priceRange": "$200–$300",
   "specs": {
    "Type": "Mechanical heavy-duty sewing machine",
@@ -583,7 +583,7 @@
   "type": "Mechanical heavy-duty sewing machine",
   "asin": null,
   "amazonQuery": "singer heavy duty 4411 sewing machine",
-  "image": null,
+  "image": "/images/products/singer-4411.webp",
   "priceRange": "$200–$300",
   "specs": {
    "Type": "Mechanical heavy-duty sewing machine",
@@ -608,7 +608,7 @@
   "type": "App-controlled sewing and embroidery machine",
   "asin": null,
   "amazonQuery": "singer smart heavy duty 9120 sewing embroidery machine",
-  "image": null,
+  "image": "/images/products/singer-9120.webp",
   "priceRange": "$500–$600",
   "specs": {
    "Type": "App-controlled sewing and embroidery machine",
@@ -635,7 +635,7 @@
   "type": "Mechanical heavy-duty sewing machine",
   "asin": null,
   "amazonQuery": "brother st371hd sewing machine",
-  "image": null,
+  "image": "/images/products/brother-st371hd.webp",
   "priceRange": "$150–$250",
   "specs": {
    "Type": "Mechanical heavy-duty sewing machine",
@@ -659,7 +659,7 @@
   "type": "High-speed straight-stitch sewing and quilting machine",
   "asin": null,
   "amazonQuery": "brother pq1500sl sewing machine",
-  "image": null,
+  "image": "/images/products/brother-pq1500sl.webp",
   "priceRange": "$700–$800",
   "specs": {
    "Type": "High-speed straight-stitch sewing and quilting machine",
@@ -708,7 +708,7 @@
   "type": "Portable walking-foot machine (straight and zigzag)",
   "asin": null,
   "amazonQuery": "sailrite ultrafeed lsz walking foot sewing machine",
-  "image": null,
+  "image": "/images/products/sailrite-ultrafeed-lsz.webp",
   "priceRange": "$1,400–$1,600",
   "specs": {
    "Type": "Portable walking-foot machine (straight and zigzag)",
