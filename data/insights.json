@@ -1,1 +1,20 @@
-{}
+{
+ "R0001": {
+  "product": "singer-4423",
+  "theme": "feeding thick fabric",
+  "frequency": "recurring",
+  "direction": "mixed"
+ },
+ "R0002": {
+  "product": "brother-st371hd",
+  "theme": "feeding thick fabric",
+  "frequency": "recurring",
+  "direction": "mixed"
+ },
+ "R0003": {
+  "product": "janome-hd1000be",
+  "theme": "build",
+  "frequency": "recurring",
+  "direction": "recurring praise"
+ }
+}

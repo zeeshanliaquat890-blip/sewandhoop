@@ -1354,5 +1354,419 @@
   "claim": "Free-motion embroidery set-up: needle and stitch",
   "status": "Verified -- primary source",
   "sourceUrl": "https://pubs.nmsu.edu/_c/C213/"
+ },
+ "C0227": {
+  "product": "singer-4552",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0228": {
+  "product": "singer-4552",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0229": {
+  "product": "singer-4552",
+  "claim": "Buttonhole",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0230": {
+  "product": "singer-4552",
+  "claim": "Needle threader and speed control",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0231": {
+  "product": "singer-4552",
+  "claim": "Frame and bedplate",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0232": {
+  "product": "singer-4552",
+  "claim": "Included specialty feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0233": {
+  "product": "singer-4552",
+  "claim": "Adjustable presser foot pressure; drop feed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0234": {
+  "product": "singer-4552",
+  "claim": "Sewing space right of needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0235": {
+  "product": "singer-4552",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0236": {
+  "product": "singer-4552",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4552-sewing-machine"
+ },
+ "C0237": {
+  "product": "singer-4411",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0238": {
+  "product": "singer-4411",
+  "claim": "Buttonhole",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0239": {
+  "product": "singer-4411",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0240": {
+  "product": "singer-4411",
+  "claim": "Frame and bedplate",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0241": {
+  "product": "singer-4411",
+  "claim": "Adjustable presser foot pressure",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0242": {
+  "product": "singer-4411",
+  "claim": "Sewing space, needle to tower",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0243": {
+  "product": "singer-4411",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0244": {
+  "product": "singer-4411",
+  "claim": "Needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0245": {
+  "product": "singer-4411",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0246": {
+  "product": "singer-4411",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-heavy-duty-4411-sewing-machine"
+ },
+ "C0247": {
+  "product": "singer-9120",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0248": {
+  "product": "singer-9120",
+  "claim": "Stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0249": {
+  "product": "singer-9120",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0250": {
+  "product": "singer-9120",
+  "claim": "Sewing space right of needle",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0251": {
+  "product": "singer-9120",
+  "claim": "Frame, threader, speed control",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0252": {
+  "product": "singer-9120",
+  "claim": "Embroidery attachment",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0253": {
+  "product": "singer-9120",
+  "claim": "Buttonhole",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0254": {
+  "product": "singer-9120",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0255": {
+  "product": "singer-9120",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.singer.com/products/singer-smart-heavy-duty-9120-sewing-embroidery-machine"
+ },
+ "C0256": {
+  "product": "brother-st371hd",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0257": {
+  "product": "brother-st371hd",
+  "claim": "Buttonhole",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0258": {
+  "product": "brother-st371hd",
+  "claim": "Needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0259": {
+  "product": "brother-st371hd",
+  "claim": "Free arm",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0260": {
+  "product": "brother-st371hd",
+  "claim": "Heavy-duty features",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0261": {
+  "product": "brother-st371hd",
+  "claim": "Included presser feet",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0262": {
+  "product": "brother-st371hd",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/st371hd"
+ },
+ "C0263": {
+  "product": "brother-st371hd",
+  "claim": "Price band",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.walmart.com/ip/51254722"
+ },
+ "C0264": {
+  "product": "brother-pq1500sl",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0265": {
+  "product": "brother-pq1500sl",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0266": {
+  "product": "brother-pq1500sl",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0267": {
+  "product": "brother-pq1500sl",
+  "claim": "Thread cutter and needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0268": {
+  "product": "brother-pq1500sl",
+  "claim": "Included feet and lift",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0269": {
+  "product": "brother-pq1500sl",
+  "claim": "Feed and pressure",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0270": {
+  "product": "brother-pq1500sl",
+  "claim": "Work space",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0271": {
+  "product": "brother-pq1500sl",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0272": {
+  "product": "brother-pq1500sl",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/pq1500sl"
+ },
+ "C0273": {
+  "product": "janome-hd1000be",
+  "claim": "Built-in stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0274": {
+  "product": "janome-hd1000be",
+  "claim": "Buttonhole",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0275": {
+  "product": "janome-hd1000be",
+  "claim": "Needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0276": {
+  "product": "janome-hd1000be",
+  "claim": "Body",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0277": {
+  "product": "janome-hd1000be",
+  "claim": "Free arm, drop feed, presser lift",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0278": {
+  "product": "janome-hd1000be",
+  "claim": "Maximum stitch width and length",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://janome.com/wp-content/uploads/2016/03/hd1000be.pdf"
+ },
+ "C0279": {
+  "product": "janome-hd1000be",
+  "claim": "US warranty",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://sewingmachinesplus.com/products/janome-hd1000"
+ },
+ "C0280": {
+  "product": "janome-hd1000be",
+  "claim": "Price band",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.janome.com/product/hd-1000-black-edition/"
+ },
+ "C0281": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0282": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Underarm space",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0283": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Needle size range",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0284": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Presser foot lift",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0285": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0286": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Stitch length and zigzag width",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0287": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Carrying weight",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0288": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Power",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0289": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0290": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0291": {
+  "product": "sailrite-ultrafeed-lsz",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.sailrite.com/Sailrite-Ultrafeed-LSZ-Walking-Foot-Sewing-Machine-110V"
+ },
+ "C0292": {
+  "product": "juki-tl-2010q",
+  "claim": "Even feed foot for heavy materials",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0293": {
+  "product": "juki-tl-2010q",
+  "claim": "Build",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0294": {
+  "product": "juki-tl-2010q",
+  "claim": "Throat plate for thick fabric",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2010q.html"
+ },
+ "C0295": {
+  "product": "juki-tl-2000qi",
+  "claim": "Included even feed foot",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
  }
 }
