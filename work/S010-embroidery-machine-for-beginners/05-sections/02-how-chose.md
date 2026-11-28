@@ -1,0 +1,7 @@
+## How we chose these machines for a first-time embroiderer
+
+Most beginner roundups rank machines by features. We asked a different question: what will trip up someone in their first few months, and which machines make that easier or cheaper to get past? That put four things ahead of raw feature counts: a hoop size that matches what a beginner wants to make, a clear way to load designs, an automatic thread cutter and needle threader where the maker lists them, and a US warranty you can read.
+
+Each machine had to have a verified type, embroidery area and US warranty to be included. For the Janome Memory Craft 400E, Janome's own US page would not load for us, so its figures come from two authorized US retailer listings that agree, and its warranty is flagged as coming from a single retailer. We dropped machines Brother now lists as discontinued and out of stock: the SE600, SE625, SE1900, PE800 and PE535 <Cite id="C0318" />. They still turn up in older roundups and on resale sites, so check before you buy one.
+
+This is a research-based guide. We have not stitched on any of these machines. We also did not find enough consistent owner reports to describe long-term reliability for any of them, so you will not find claims about how they hold up over the years. Our full approach is on [how we review](/how-we-review/). Order follows fit for a beginner, not what pays us; the site earns a commission on Amazon.com purchases made through links here.

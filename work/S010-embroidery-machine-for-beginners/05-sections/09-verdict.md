@@ -1,0 +1,9 @@
+<Verdict buyIf="You want a small, forgiving first machine: the Brother SE700 if you also sew, or the PE545 if you only want to embroider. Step up to the PE900, SE2000 or Janome 400E if you already know you want bigger designs." skipIf="You mostly sew and want only an occasional monogram, or you are unsure you will keep going and a $400–$600 machine is already a stretch.">
+For most first-time embroiderers, a 4 x 4 inch machine in the $400–$600 range is the sensible start. It teaches hooping, stabilizer and thread handling on small projects, and you can move up once you know what you want to make. If your budget stretches and you already know you want larger designs, the 5 x 7 inch Brother PE900 or SE2000 and the Janome 400E are the next step. Whichever you choose, read the warranty terms, and ask an authorized dealer if you want help getting started.
+</Verdict>
+
+## How this article was researched
+
+This guide is research-based. We checked each machine's specifications against the maker's US product page, using the Brother and Singer sites and, for the Janome 400E, two authorized US retailer listings that agree, because Janome's page would not load. Every figure above carries a citation to our claim ledger. We did not find enough consistent owner reports to describe long-term reliability, so we make no claims about it, and we have not tested any machine ourselves. Prices are bands, not quotes. This site earns a commission on Amazon.com purchases made through links here; it does not change the order or the verdicts. Read more on [how we review](/how-we-review/).
+
+{/* Pending internal links: /embroidery-machine-for-hats/ (S024), /how-to-start-embroidery/ (S022), /brother-embroidery-machine-for-beginners/ (S120), /best-sewing-and-embroidery-machine-combo-for-beginners/ (S069) */}

@@ -1768,5 +1768,143 @@
   "claim": "Included even feed foot",
   "status": "Verified -- primary source",
   "sourceUrl": "https://www.jukihome.com/products/tl-2000qi.html"
+ },
+ "C0296": {
+  "product": "brother-se725",
+  "claim": "Machine type",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0297": {
+  "product": "brother-se725",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0298": {
+  "product": "brother-se725",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0299": {
+  "product": "brother-se725",
+  "claim": "Built-in embroidery fonts",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0300": {
+  "product": "brother-se725",
+  "claim": "Built-in sewing stitches",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0301": {
+  "product": "brother-se725",
+  "claim": "Buttonholes",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0302": {
+  "product": "brother-se725",
+  "claim": "Maximum sewing speed",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0303": {
+  "product": "brother-se725",
+  "claim": "Automatic thread cutter",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0304": {
+  "product": "brother-se725",
+  "claim": "Automatic needle threader",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0305": {
+  "product": "brother-se725",
+  "claim": "Hoop included",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0306": {
+  "product": "brother-se725",
+  "claim": "Display",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0307": {
+  "product": "brother-se725",
+  "claim": "US warranty",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0308": {
+  "product": "brother-se725",
+  "claim": "Price band",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0309": {
+  "product": "brother-se725",
+  "claim": "Retail channel",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/p/sewing-embroidery/SE725"
+ },
+ "C0310": {
+  "product": "janome-mc400e",
+  "claim": "Machine type",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0311": {
+  "product": "janome-mc400e",
+  "claim": "Embroidery area, maximum",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0312": {
+  "product": "janome-mc400e",
+  "claim": "Built-in embroidery designs",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0313": {
+  "product": "janome-mc400e",
+  "claim": "Built-in monogramming fonts",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0314": {
+  "product": "janome-mc400e",
+  "claim": "Embroidery speed range",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0315": {
+  "product": "janome-mc400e",
+  "claim": "Design transfer",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.moores-sew.com/?p=7937"
+ },
+ "C0316": {
+  "product": "janome-mc400e",
+  "claim": "US warranty",
+  "status": "Inference -- label carefully",
+  "sourceUrl": "https://www.target.com/p/-/A-89051546"
+ },
+ "C0317": {
+  "product": "janome-mc400e",
+  "claim": "Price band",
+  "status": "Verified -- two secondary sources",
+  "sourceUrl": "https://www.target.com/p/-/A-89051546"
+ },
+ "C0318": {
+  "product": "general",
+  "claim": "Discontinued Brother entry machines",
+  "status": "Verified -- primary source",
+  "sourceUrl": "https://www.brother-usa.com/products/se600"
  }
 }

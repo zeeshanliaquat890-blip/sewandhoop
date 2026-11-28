@@ -723,5 +723,51 @@
   "supersededBy": null,
   "status": "Verified -- primary source",
   "lastVerified": "2026-11-26"
+ },
+ "brother-se725": {
+  "id": "brother-se725",
+  "name": "Brother SE725",
+  "brand": "Brother",
+  "variant": "SE725 (Walmart exclusive)",
+  "type": "Computerized sewing and embroidery machine",
+  "asin": null,
+  "amazonQuery": "brother se725 sewing embroidery machine",
+  "image": null,
+  "priceRange": "$500–$600",
+  "specs": {
+   "Type": "Computerized sewing and embroidery machine",
+   "Built-in stitches": "103",
+   "Buttonholes": "10 one-step styles",
+   "Max speed": "710 spm",
+   "Embroidery field": "4 x 4 in",
+   "Needle threader": "Yes",
+   "Warranty (US)": "1/2/25-year limited"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- primary source",
+  "lastVerified": "2026-11-27"
+ },
+ "janome-mc400e": {
+  "id": "janome-mc400e",
+  "name": "Janome Memory Craft 400E",
+  "brand": "Janome",
+  "variant": "Memory Craft 400E",
+  "type": "Embroidery-only machine",
+  "asin": null,
+  "amazonQuery": "janome memory craft 400e embroidery machine",
+  "image": null,
+  "priceRange": "$1,400–$1,500",
+  "specs": {
+   "Type": "Embroidery-only machine",
+   "Embroidery field": "7.9 x 7.9 in",
+   "Warranty (US)": "25-year limited (single retail source)"
+  },
+  "score": null,
+  "scores": null,
+  "supersededBy": null,
+  "status": "Verified -- two secondary sources",
+  "lastVerified": "2026-11-27"
  }
 }

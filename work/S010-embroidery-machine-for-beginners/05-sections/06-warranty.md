@@ -1,0 +1,5 @@
+## Warranty, service and support in the US
+
+Every machine here has a limited warranty, but lengths differ by part. Brother's entry and mid-range models list 1/2/25-year limited coverage <Cite id="C0038" /> <Cite id="C0061" /> <Cite id="C0307" /> <Cite id="C0046" /> <Cite id="C0053" />, which means different parts are covered for different lengths of time. The NQ1700E and PRS100 list a premium 2/6/25-year version <Cite id="C0084" /> <Cite id="C0077" />. Singer lists up to 25 years with restrictions <Cite id="C0103" />, and one US retailer shows 25 years for the Janome 400E <Cite id="C0316" />. Read the maker's terms before you buy, because a long headline figure often covers only part of the machine.
+
+Where you buy affects service. An authorized local dealer can often help with set-up, offer a class, and handle repairs, which is valuable if hooping and threading are new to you. Buying online is convenient, but you will usually work through the maker's support line. Keep your receipt and register the machine either way.
